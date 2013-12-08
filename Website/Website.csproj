@@ -58,12 +58,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Form.aspx" />
     <Content Include="Scripts\angular\angular-resource.min.js" />
     <Content Include="Scripts\angular\angular-route.min.js" />
     <Content Include="Scripts\angular\angular.min.js" />
-    <Content Include="Scripts\bootstrap\bootstrap-ie7.css" />
     <Content Include="Scripts\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Scripts\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Scripts\bootstrap\custom\TooltipLauncher.js" />
     <Content Include="Styles\fontawesome\css\font-awesome.css" />
     <Content Include="Styles\fontawesome\css\font-awesome.min.css" />
     <Content Include="Styles\fontawesome\fonts\fontawesome-webfont.svg" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

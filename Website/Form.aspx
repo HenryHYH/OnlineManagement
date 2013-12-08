@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Website.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Form.aspx.cs" Inherits="Website.Form" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>List</title>
+    <title>Detial</title>
     <link href="/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/Scripts/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="/Styles/fontawesome/css/font-awesome.css" rel="stylesheet" />
@@ -110,62 +110,47 @@
             <div class="col-md-10">
                 <fieldset>
                     <legend class="text-right">
-                        <span class="pull-left">List</span>
-                        <a class="btn btn-primary" data-toggle="tooltip" title="Facebook">
-                            <i class="fa fa-facebook"></i>
+                        <span class="pull-left">Detail</span>
+                        <a class="btn btn-warning" title="Back" data-toggle="tooltip" role="button">
+                            <i class="fa fa-arrow-left"></i>
                         </a>
-                        <a class="btn btn-danger" data-toggle="tooltip" title="Weibo">
-                            <i class="fa fa-weibo"></i>
-                        </a>
-                        <a class="btn btn-primary" data-toggle="tooltip" title="Like">
-                            <i class="fa fa-thumbs-o-up"></i>
-                        </a>
-                        <a class="btn btn-success" href="#" data-toggle="tooltip" title="Save">
+                        <a class="btn btn-success" title="Save" data-placement="bottom" data-toggle="tooltip" role="button">
                             <i class="fa fa-save"></i>
                         </a>
-                        <a class="btn btn-info" data-toggle="tooltip" title="Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-default" data-toggle="tooltip" title="Edit">
-                            <i class="fa fa-edit"></i>
-                        </a>
-                        <a class="btn btn-warning" data-toggle="tooltip" title="Download">
-                            <i class="fa fa-download"></i>
-                        </a>
-                        <a class="btn btn-danger" data-toggle="tooltip" title="Delete">
-                            <i class="fa fa-trash-o"></i>
-                        </a>
                     </legend>
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Age</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1 </td>
-                                <td>Henry</td>
-                                <td>27</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Hello</td>
-                                <td>3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <ul class="pagination">
-                        <li class="disabled"><a href="#">&laquo;</a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="txtName" class="control-label col-md-2">
+                                Name
+                            </label>
+                            <div class="col-md-7">
+                                <input id="txtName" type="text" placeholder="Name" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtAge" class="control-label col-md-2">
+                                Age
+                            </label>
+                            <div class="col-md-2">
+                                <input id="txtAge" type="number" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2">
+                                Gender
+                            </label>
+                            <div class="col-md-10">
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" checked="checked" />
+                                    Male
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" />
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </form>
                 </fieldset>
             </div>
         </div>
