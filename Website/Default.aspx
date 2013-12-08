@@ -11,11 +11,12 @@
     <link href="/Styles/fontawesome/css/font-awesome.css" rel="stylesheet" />
     <style type="text/css">
         body { padding-top: 70px; }
+        .container-full { margin: 0 auto; width: 100%; }
     </style>
 </head>
 <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
+        <div class="container container-full">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -68,7 +69,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container container-full">
         <div class="row">
             <div class="col-md-12">
                 <ul class="breadcrumb">
@@ -111,6 +112,9 @@
                 <fieldset>
                     <legend class="text-right">
                         <span class="pull-left">List</span>
+                        <a class="btn btn-default">
+                            <i class="fa fa-android"></i>
+                        </a>
                         <a class="btn btn-primary" data-toggle="tooltip" title="Facebook">
                             <i class="fa fa-facebook"></i>
                         </a>
