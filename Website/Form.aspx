@@ -10,9 +10,11 @@
     <link href="/Scripts/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="/Styles/fontawesome/css/font-awesome.css" rel="stylesheet" />
     <style type="text/css">
+        html, body { height: 100%; }
         body { padding-top: 70px; }
         .container-full { margin: 0 auto; width: 100%; }
-        #footer { background-color: #f5f5f5; height: 60px; padding-top: 10px; }
+        .container-full-height { min-height: 100%; }
+        .footer { background: #F2F2F2; border-top: 1px solid #E4E4E4; margin-top: -60px; height: 60px; padding-top: 15px; }
     </style>
 </head>
 <body>
@@ -70,7 +72,7 @@
             </div>
         </div>
     </div>
-    <div class="container container-full">
+    <div class="container container-full container-full-height">
         <div class="row">
             <div class="col-md-12">
                 <ul class="breadcrumb">
@@ -157,13 +159,9 @@
             </div>
         </div>
     </div>
-    <div id="footer">
+    <div class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p class="text-info">Footer</p>
-                </div>
-            </div>
+            <p class="text-warning">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
     <script type="text/javascript" src="/Scripts/jquery-1.10.2.min.js"></script>
