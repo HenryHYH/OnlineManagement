@@ -58,7 +58,7 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-right" role="form">
+                <form class="navbar-form navbar-right visible-lg" role="form">
                     <div class="form-group">
                         <input type="text" placeholder="Email" class="form-control" />
                     </div>
