@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Detial</title>
+    <title>Detail</title>
     <link href="/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/Scripts/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="/Styles/fontawesome/css/font-awesome.css" rel="stylesheet" />
@@ -144,13 +144,40 @@
                                 Gender
                             </label>
                             <div class="col-md-10">
-                                <label class="radio-inline">
+                                <label class="radio-inline text-primary">
                                     <input type="radio" name="gender" checked="checked" />
                                     Male
                                 </label>
-                                <label class="radio-inline">
+                                <label class="radio-inline text-danger">
                                     <input type="radio" name="gender" />
                                     Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2">
+                                Favorite
+                            </label>
+                            <div class="col-md-10">
+                                <label class="checkbox-inline text-info">
+                                    <input type="checkbox" />
+                                    <i class="fa fa-music"></i>
+                                    Music
+                                </label>
+                                <label class="checkbox-inline text-muted">
+                                    <input type="checkbox" />
+                                    <i class="fa fa-camera"></i>
+                                    Photo
+                                </label>
+                                <label class="checkbox-inline text-success">
+                                    <input type="checkbox" />
+                                    <i class="fa fa-glass"></i>
+                                    Wine
+                                </label>
+                                <label class="checkbox-inline text-warning">
+                                    <input type="checkbox" />
+                                    <i class="fa fa-coffee"></i>
+                                    Coffee
                                 </label>
                             </div>
                         </div>
