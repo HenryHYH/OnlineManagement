@@ -9,13 +9,7 @@
     <link href="/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/Scripts/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="/Styles/fontawesome/css/font-awesome.css" rel="stylesheet" />
-    <style type="text/css">
-        html, body { height: 100%; }
-        body { padding-top: 70px; }
-        .container-full { margin: 0 auto; width: 100%; }
-        .container-full-height { min-height: 100%; }
-        .footer { background: #F2F2F2; border-top: 1px solid #E4E4E4; margin-top: -60px; height: 60px; padding-top: 15px; }
-    </style>
+    <link href="/Styles/Custom.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -177,9 +171,9 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer navbar-inverse">
         <div class="container">
-            <p class="text-warning">Create by Henry <i class="fa fa-smile-o"></i></p>
+            <p class="text-center text-primary">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
     <script type="text/javascript" src="/Scripts/jquery-1.10.2.min.js"></script>
