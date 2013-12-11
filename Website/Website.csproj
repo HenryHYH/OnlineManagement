@@ -59,7 +59,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Form.aspx" />
-    <Content Include="Route\index-multi.html" />
+    <Content Include="Route\index-multi-custom.html" />
     <Content Include="Route\index.html" />
     <Content Include="Route\route1.html" />
     <Content Include="Route\route1.list.html" />
