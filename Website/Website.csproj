@@ -57,17 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\breadCrumb.html" />
     <Content Include="App\index.html" />
     <Content Include="Default.aspx" />
     <Content Include="Form.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Master.aspx" />
-    <Content Include="Route\index-multi-custom.html" />
-    <Content Include="Route\index.html" />
-    <Content Include="Route\route1.html" />
-    <Content Include="Route\route1.list.html" />
-    <Content Include="Route\route2.html" />
-    <Content Include="Route\route2.list.html" />
+    <Content Include="Scripts\angular\angular-breadcrumb.js" />
     <Content Include="Scripts\angular\angular-resource.min.js" />
     <Content Include="Scripts\angular\angular-route.min.js" />
     <Content Include="Scripts\angular\angular-ui-router.min.js" />
@@ -103,6 +98,9 @@
     <Compile Include="Form.aspx.designer.cs">
       <DependentUpon>Form.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Master.aspx.cs">
       <DependentUpon>Master.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -130,6 +128,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Controllers\" />
     <Folder Include="App\Services\" />
     <Folder Include="App\Views\" />
   </ItemGroup>

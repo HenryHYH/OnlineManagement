@@ -1,4 +1,8 @@
-﻿var omApp = angular.module('om', ['ui.router']);
+﻿var omApp = angular.module('om', ['ui.router', 'ui-breadcrumb']);
+
+omApp.config(function ($breadcrumbProvider) {
+    $breadcrumbProvider.setPrefixState('index');
+});
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/index");
@@ -6,35 +10,39 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index", {
-        title: "Hello title",
+        title: "Hello index title",
+        breadcrumb: "Home",
         url: "/index",
         views: {
-            "view-main": {
-                //templateUrl: "/App/index.html"
-            },
-            "view-bread-crumb": {
-                templateUrl: "/App/breadCrumb.html"
+            "@": {
+                //template: "Hello index <a ui-sref='.list'>List</a>"
+                templateUrl: "/App/index.html"
+            }
+        }
+    }).state("index.list.detail", {
+        breadcrumb: "Detail",
+        url: "/detail",
+        views: {
+            "@": {
+                template: "Hello detail <a ui-sref='index'>Index</a>"
             }
         }
     });
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index.hello", {
-        url: "/hello",
+    $stateProvider.state("index.list", {
+        title: "Hello index.list title",
+        url: "/list",
         views: {
-            "view-main": {
-                templateUrl: "/App/breadCrumb.html"
+            "@": {
+                template: "Hello list <a ui-sref='.detail'>Index</a>"
             }
         }
     });
 });
 
 omApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
-    // It's very handy to add references to $state and $stateParams to the $rootScope
-    // so that you can access them from any scope within your applications.For example,
-    // <li ng-class="{ active: $state.includes('contacts.list') }"> will set the <li>
-    // to active whenever 'contacts.list' or one of its decendents is active.
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
 }]);

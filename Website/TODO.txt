@@ -1,3 +1,2 @@
 ﻿Fix footer
-Master page - angular-ui-router
 Bootstrap theme
