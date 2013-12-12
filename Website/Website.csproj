@@ -57,31 +57,34 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Controller\AsideController.js" />
     <Content Include="App\index.html" />
-    <Content Include="App\Views\Nav.html" />
-    <Content Include="App\Views\Nav2.html" />
+    <Content Include="App\View\Aside.html" />
+    <Content Include="App\View\Aside2.html" />
+    <Content Include="App\View\BreadCrumb.html" />
     <Content Include="Default.aspx" />
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Master.aspx" />
-    <Content Include="Scripts\angular\angular-breadcrumb.js" />
-    <Content Include="Scripts\angular\angular-resource.min.js" />
-    <Content Include="Scripts\angular\angular-route.min.js" />
-    <Content Include="Scripts\angular\angular-ui-router.min.js" />
-    <Content Include="Scripts\angular\angular.min.js" />
+    <Content Include="Script\bootstrap\css\bootstrap-cosmo.min.css" />
+    <Content Include="Script\bootstrap\css\bootstrap-cyborg.min.css" />
+    <Content Include="Script\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Script\angular\angular-breadcrumb.js" />
+    <Content Include="Script\angular\angular-resource.min.js" />
+    <Content Include="Script\angular\angular-route.min.js" />
+    <Content Include="Script\angular\angular-ui-router.min.js" />
+    <Content Include="Script\angular\angular.min.js" />
     <Content Include="App\App.js" />
-    <Content Include="Scripts\bootstrap\css\bootstrap-theme.min.css" />
-    <Content Include="Scripts\bootstrap\css\bootstrap.min.css" />
-    <Content Include="Scripts\bootstrap\custom\TooltipLauncher.js" />
-    <Content Include="Styles\Custom.css" />
-    <Content Include="Styles\fontawesome\css\font-awesome.css" />
-    <Content Include="Styles\fontawesome\css\font-awesome.min.css" />
-    <Content Include="Styles\fontawesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Scripts\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
-    <Content Include="Scripts\bootstrap\respond.min.js" />
+    <Content Include="Script\bootstrap\custom\TooltipLauncher.js" />
+    <Content Include="Style\Custom.css" />
+    <Content Include="Style\fontawesome\css\font-awesome.css" />
+    <Content Include="Style\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Style\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Script\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Script\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Script\jquery-1.10.2.min.js" />
+    <Content Include="Script\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Script\bootstrap\respond.min.js" />
     <Content Include="TODO.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -113,15 +116,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Scripts\angular\angular.min.js.map" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Styles\fontawesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="Styles\fontawesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Styles\fontawesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="Styles\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Script\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Script\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Script\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Script\angular\angular.min.js.map" />
+    <Content Include="Script\jquery-1.10.2.min.map" />
+    <Content Include="Style\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Style\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Style\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Style\fontawesome\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,8 +133,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Controllers\" />
-    <Folder Include="App\Services\" />
+    <Folder Include="App\Service\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

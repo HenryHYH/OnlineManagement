@@ -2,14 +2,13 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="om">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="om" ng-cloak>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title ng-bind="$state.current.title" ng-cloak>{{$state.current.title}}</title>
-    <link href="/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/Scripts/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="/Styles/fontawesome/css/font-awesome.css" rel="stylesheet" />
-    <link href="/Styles/Custom.css" rel="stylesheet" />
+    <title>{{$state.current.title}}</title>
+    <link href="/Script/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Style/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/Style/Custom.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -68,112 +67,40 @@
     </div>
     <div class="container container-full container-full-height">
         <div class="row">
-            <div class="col-md-12" ui-breadcrumb ng-cloak>
-                <ul class="breadcrumb">
-                    <li ng-repeat="b in breadcrumbs" ng-class="{active:$last}">
-                        <a ui-sref="{{b.sref}}" ng-if="!$last">{{b.name}}</a>
-                        <span ng-if="$last">{{b.name}}</span>
-                    </li>
-                </ul>
-            </div>
+            <div class="col-md-12" ng-include="'/App/View/BreadCrumb.html'"></div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="well" ui-view></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2" ui-view="view-nav">                
+            <div class="col-md-2" ui-view="view-aside">
             </div>
             <div class="col-md-10">
-                <fieldset>
-                    <legend class="text-right">
-                        <span class="pull-left">List</span>
-                        <a class="btn btn-default">
-                            <i class="fa fa-android"></i>
-                        </a>
-                        <a class="btn btn-primary" data-toggle="tooltip" title="Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a class="btn btn-danger" data-toggle="tooltip" title="Weibo">
-                            <i class="fa fa-weibo"></i>
-                        </a>
-                        <a class="btn btn-primary" data-toggle="tooltip" title="Like">
-                            <i class="fa fa-thumbs-o-up"></i>
-                        </a>
-                        <a class="btn btn-success" href="#" data-toggle="tooltip" title="Save">
-                            <i class="fa fa-save"></i>
-                        </a>
-                        <a class="btn btn-info" data-toggle="tooltip" title="Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-default" data-toggle="tooltip" title="Edit">
-                            <i class="fa fa-edit"></i>
-                        </a>
-                        <a class="btn btn-warning" data-toggle="tooltip" title="Download">
-                            <i class="fa fa-download"></i>
-                        </a>
-                        <a class="btn btn-danger" data-toggle="tooltip" title="Delete">
-                            <i class="fa fa-trash-o"></i>
-                        </a>
-                    </legend>
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Age</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1 </td>
-                                <td>Henry</td>
-                                <td>27</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Hello</td>
-                                <td>3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <ul class="pagination">
-                        <li class="disabled"><a href="#">&laquo;</a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </fieldset>
+                <div class="well" ui-view></div>
             </div>
         </div>
     </div>
     <div class="footer navbar-inverse">
         <div class="container">
-            <p class="text-center text-primary">Create by Henry <i class="fa fa-smile-o"></i></p>
+            <p class="text-center">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
     <!-- jQuery -->
-    <script type="text/javascript" src="/Scripts/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/Scripts/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery-migrate-1.2.1.min.js"></script>
 
     <!-- bootstrap -->
-    <script type="text/javascript" src="/Scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Script/bootstrap/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="/Scripts/bootstrap/respond.min.js"></script>
+      <script type="text/javascript" src="/Script/bootstrap/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="/Scripts/bootstrap/custom/TooltipLauncher.js"></script>
+    <script type="text/javascript" src="/Script/bootstrap/custom/TooltipLauncher.js"></script>
 
     <!-- angular -->
-    <script type="text/javascript" src="/Scripts/angular/angular.min.js"></script>
-    <script type="text/javascript" src="/Scripts/angular/angular-ui-router.min.js"></script>
-    <script type="text/javascript" src="/Scripts/angular/angular-breadcrumb.js"></script>
+    <script type="text/javascript" src="/Script/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/Script/angular/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="/Script/angular/angular-breadcrumb.js"></script>
 
     <!-- Custom -->
     <script type="text/javascript" src="/App/App.js"></script>
+    <script type="text/javascript" src="/App/Controller/AsideController.js"></script>
 
 </body>
 </html>

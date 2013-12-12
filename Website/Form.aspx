@@ -6,10 +6,10 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Detail</title>
-    <link href="/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/Scripts/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="/Styles/fontawesome/css/font-awesome.css" rel="stylesheet" />
-    <link href="/Styles/Custom.css" rel="stylesheet" />
+    <link href="/Script/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Script/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="/Style/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/Style/Custom.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -185,13 +185,13 @@
             <p class="text-center text-primary">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
-    <script type="text/javascript" src="/Scripts/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/Scripts/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="/Scripts/angular/angular.min.js"></script>
-    <script type="text/javascript" src="/Scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Script/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/Script/bootstrap/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="/Scripts/bootstrap/respond.min.js"></script>
+      <script type="text/javascript" src="/Script/bootstrap/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="/Scripts/bootstrap/custom/TooltipLauncher.js"></script>
+    <script type="text/javascript" src="/Script/bootstrap/custom/TooltipLauncher.js"></script>
 </body>
 </html>

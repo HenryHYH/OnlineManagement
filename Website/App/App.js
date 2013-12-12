@@ -17,8 +17,20 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             "@": {
                 templateUrl: "/App/index.html"
             },
-            "view-nav": {
-                templateUrl: "/App/Views/Nav.html"
+            "view-aside@": {
+                templateUrl: "/App/View/Aside.html",
+                controller: "AsideController"
+            }
+        }
+    }).state("index.list", {
+        title: "Hello index.list title",
+        url: "/list",
+        views: {
+            "@": {
+                template: "Hello list <a ui-sref='.detail'>Index</a>"
+            },
+            "view-aside@": {
+                templateUrl: "/App/View/Aside2.html"
             }
         }
     }).state("index.list.detail", {
@@ -33,15 +45,39 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index.list", {
-        title: "Hello index.list title",
-        url: "/list",
+    $stateProvider.state("index.search", {
+        url: "/search",
         views: {
             "@": {
-                template: "Hello list <a ui-sref='.detail'>Index</a>"
-            },
-            "view-nav@": {
-                templateUrl: "/App/Views/Nav2.html"
+                template: "Search"
+            }
+        }
+    }).state("index.book", {
+        url: "/book",
+        views: {
+            "@": {
+                template: "Book"
+            }
+        }
+    }).state("index.refresh", {
+        url: "/refresh",
+        views: {
+            "@": {
+                template: "Refresh"
+            }
+        }
+    }).state("index.adjust", {
+        url: "/adjust",
+        views: {
+            "@": {
+                template: "Adjust"
+            }
+        }
+    }).state("index.spinner", {
+        url: "/spinner",
+        views: {
+            "@": {
+                template: "Spinner"
             }
         }
     });
