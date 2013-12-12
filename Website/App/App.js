@@ -15,8 +15,10 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         url: "/index",
         views: {
             "@": {
-                //template: "Hello index <a ui-sref='.list'>List</a>"
                 templateUrl: "/App/index.html"
+            },
+            "view-nav": {
+                templateUrl: "/App/Views/Nav.html"
             }
         }
     }).state("index.list.detail", {
@@ -37,6 +39,9 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         views: {
             "@": {
                 template: "Hello list <a ui-sref='.detail'>Index</a>"
+            },
+            "view-nav@": {
+                templateUrl: "/App/Views/Nav2.html"
             }
         }
     });

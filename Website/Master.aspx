@@ -83,38 +83,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="well">{{$state.current.title}} | {{breadcrumbs}}</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <div class="list-group">
-                    <a href="#" class="list-group-item active">
-                        <span class="fa fa-search fa-spin"></span>
-                        FA-Search
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <span class="fa fa-book fa-spin"></span>
-                        FA-Book
-                    </a>
-                    <a class="list-group-item">
-                        <i class="fa fa-refresh fa-spin"></i>
-                        FA-Refresh
-                    </a>
-                    <a class="list-group-item">
-                        <i class="fa fa-adjust fa-spin"></i>
-                        FA-Adjust
-                    </a>
-                    <a class="list-group-item">
-                        <i class="fa fa-spinner fa-spin"></i>
-                        FA-Spinner
-                    </a>
-                    <a class="list-group-item">
-                        <i class="fa fa-cog fa-spin"></i>
-                        Cog
-                    </a>
-                </div>
+            <div class="col-md-2" ui-view="view-nav">                
             </div>
             <div class="col-md-10">
                 <fieldset>

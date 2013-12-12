@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\index.html" />
+    <Content Include="App\Views\Nav.html" />
+    <Content Include="App\Views\Nav2.html" />
     <Content Include="Default.aspx" />
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
@@ -130,7 +132,6 @@
   <ItemGroup>
     <Folder Include="App\Controllers\" />
     <Folder Include="App\Services\" />
-    <Folder Include="App\Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
