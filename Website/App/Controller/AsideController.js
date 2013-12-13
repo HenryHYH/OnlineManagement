@@ -1,4 +1,4 @@
-﻿var AsideController = function ($scope, $state) {
+﻿var AsideController = function ($scope) {
     $scope.aside = [
         { icon: "search", text: "Search", sref: "index.search" },
         { icon: "book", text: "Book", sref: "index.book" },

@@ -1,5 +1,10 @@
 ﻿var omApp = angular.module('om', ['ui.router', 'ui-breadcrumb']);
 
+omApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
+    $rootScope.$state = $state;
+    $rootScope.$stateParams = $stateParams;
+}]);
+
 omApp.config(function ($breadcrumbProvider) {
     $breadcrumbProvider.setPrefixState('index');
 });
@@ -82,8 +87,3 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         }
     });
 });
-
-omApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
-    $rootScope.$state = $state;
-    $rootScope.$stateParams = $stateParams;
-}]);
