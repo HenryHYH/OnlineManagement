@@ -1,5 +1,6 @@
 ﻿<div class="list-group" ng-show="aside">
-    <a class="list-group-item" ng-class="{active:$state.is(item.sref)}" ng-repeat="item in aside" ui-sref="{{item.sref}}">
+    <!-- ng-class="{active:$state.is(item.sref)}" -->
+    <a class="list-group-item" ng-repeat="item in aside" ui-sref="{{item.sref}}" ui-sref-active="active">
         <i class="fa fa-{{item.icon}}"></i>
         {{item.text}}
     </a>

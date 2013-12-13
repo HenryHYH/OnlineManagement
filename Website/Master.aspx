@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Project name</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -74,6 +74,7 @@
             </div>
             <div class="col-md-10">
                 <div class="well" ui-view></div>
+                <div class="well"><a href="#" ui-sref="index" ui-sref-active="btn btn-success">Test</a></div>
             </div>
         </div>
     </div>
@@ -95,7 +96,7 @@
 
     <!-- angular -->
     <script type="text/javascript" src="/Script/angular/angular.min.js"></script>
-    <script type="text/javascript" src="/Script/angular/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="/Script/angular/angular-ui-router.js"></script>
     <script type="text/javascript" src="/Script/angular/angular-breadcrumb.js"></script>
 
     <!-- Custom -->

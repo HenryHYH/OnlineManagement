@@ -66,13 +66,13 @@
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Master.aspx" />
+    <Content Include="Script\angular\angular-ui-router.js" />
     <Content Include="Script\bootstrap\css\bootstrap-cosmo.min.css" />
     <Content Include="Script\bootstrap\css\bootstrap-cyborg.min.css" />
     <Content Include="Script\bootstrap\css\bootstrap.min.css" />
     <Content Include="Script\angular\angular-breadcrumb.js" />
     <Content Include="Script\angular\angular-resource.min.js" />
     <Content Include="Script\angular\angular-route.min.js" />
-    <Content Include="Script\angular\angular-ui-router.min.js" />
     <Content Include="Script\angular\angular.min.js" />
     <Content Include="App\App.js" />
     <Content Include="Script\bootstrap\custom\TooltipLauncher.js" />
