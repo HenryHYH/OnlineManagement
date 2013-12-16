@@ -62,7 +62,7 @@
 
     <!-- Custom -->
     <script type="text/javascript" src="/App/App.js"></script>
-    <script type="text/javascript" src="/App/Contoller/NavigateController.js"></script>
+    <script type="text/javascript" src="/App/Controller/NavigateController.js"></script>
     <script type="text/javascript" src="/App/Controller/AsideController.js"></script>
 
 </body>

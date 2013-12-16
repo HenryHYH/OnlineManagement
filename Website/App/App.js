@@ -28,7 +28,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             },
             "view-navigate@": {
                 templateUrl: "/App/View/Navigate.html",
-                contoller: "NavigateController"
+                controller: "NavigateController"
             }
         }
     }).state("index.list", {
