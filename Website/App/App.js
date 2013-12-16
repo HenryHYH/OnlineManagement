@@ -94,6 +94,42 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider.state("index.about", {
+        url: "/about",
+        breadcrumb: "About",
+        views: {
+            "@": {
+                template: "About"
+            }
+        }
+    });
+});
+
+omApp.config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider.state("index.contact", {
+        url: "/contact",
+        breadcrumb: "Contact",
+        views: {
+            "@": {
+                template: "Contact"
+            }
+        }
+    });
+});
+
+omApp.config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider.state("index.product", {
+        url: "/product",
+        breadcrumb: "Products",
+        views: {
+            "@": {
+                template: "Products"
+            }
+        }
+    });
+});
+
+omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index.account", {
         url: "/account",
         breadcrumb: "Account",

@@ -1,5 +1,5 @@
 ﻿<ul class="nav navbar-nav">
-    <li class="active"><a href="#"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+    <!--<li class="active"><a href="#"><i class="fa fa-home"></i>&nbsp;Home</a></li>
     <li><a href="#about"><i class="fa fa-envelope-o"></i>&nbsp;About</a></li>
     <li><a href="#contact"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
     <li class="dropdown">
@@ -13,12 +13,20 @@
             <li><a href="#">Separated link</a></li>
             <li><a href="#">One more separated link</a></li>
         </ul>
+    </li>-->
+    <li ng-repeat="item in navigateLeft" ui-sref-active="active" ng-class="{dropdown:item.children && item.children.length > 0}">
+        <a data-toggle="dropdown" role="button" data-target="#" ng-class="{'dropdown-toggle':item.children && item.children.length > 0}" ui-sref="{{item.sref}}">
+            <i class="fa fa-{{item.icon}}"></i>&nbsp;{{item.text}} <b class="caret" ng-show="item.children && item.children.length > 0"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" ng-show="item.children && item.children.length > 0">
+            <li ng-repeat="child in item.children" ng-class="{divider:child.text == '-'}"><a ng-if="child.text != '-'" ui-sref="{{child.sref}}"><i class="fa fa-{{child.icon}}"></i>&nbsp;&nbsp;{{child.text}}</a></li>
+        </ul>
     </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
     <li ng-repeat="item in navigateRight" ui-sref-active="active" ng-class="{dropdown:item.children && item.children.length > 0}">
         <a data-toggle="dropdown" role="button" data-target="#" ng-class="{'dropdown-toggle':item.children && item.children.length > 0}" ui-sref="{{item.sref}}">
-            <i class="fa fa-{{item.icon}}"></i>&nbsp;{{item.text}} <b class="caret" ng-show="item.children"></b>
+            <i class="fa fa-{{item.icon}}"></i>&nbsp;{{item.text}} <b class="caret" ng-show="item.children && item.children.length > 0"></b>
         </a>
         <ul class="dropdown-menu" role="menu" ng-show="item.children && item.children.length > 0">
             <li ng-repeat="child in item.children" ng-class="{divider:child.text == '-'}"><a ng-if="child.text != '-'" ui-sref="{{child.sref}}"><i class="fa fa-{{child.icon}}"></i>&nbsp;&nbsp;{{child.text}}</a></li>
