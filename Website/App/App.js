@@ -25,6 +25,10 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             "view-aside@": {
                 templateUrl: "/App/View/Aside.html",
                 controller: "AsideController"
+            },
+            "view-navigate@": {
+                templateUrl: "/App/View/Navigate.html",
+                contoller: "NavigateController"
             }
         }
     }).state("index.list", {

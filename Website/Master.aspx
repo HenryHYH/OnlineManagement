@@ -22,46 +22,7 @@
                 </button>
                 <a class="navbar-brand" href="/">Project name</a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#"><i class="fa fa-home"></i>&nbsp;Home</a></li>
-                    <li><a href="#about"><i class="fa fa-briefcase"></i>&nbsp;About</a></li>
-                    <li><a href="#contact"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My account <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;Sign out</a></li>
-                </ul>
-                <form class="navbar-form navbar-right visible-lg" role="form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Email" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Password" class="form-control" />
-                    </div>
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i>&nbsp;Sign in</button>
-                </form>
+            <div class="collapse navbar-collapse" ui-view="view-navigate">
             </div>
         </div>
     </div>
@@ -101,6 +62,7 @@
 
     <!-- Custom -->
     <script type="text/javascript" src="/App/App.js"></script>
+    <script type="text/javascript" src="/App/Contoller/NavigateController.js"></script>
     <script type="text/javascript" src="/App/Controller/AsideController.js"></script>
 
 </body>
