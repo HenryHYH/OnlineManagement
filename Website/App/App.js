@@ -24,7 +24,8 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             },
             "view-aside@": {
                 templateUrl: "/App/View/Aside.html",
-                controller: "AsideController"
+                controller: "AsideController",
+                data: { parent: "index" }
             },
             "view-navigate@": {
                 templateUrl: "/App/View/Navigate.html",
@@ -99,6 +100,11 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         views: {
             "@": {
                 template: "My account"
+            },
+            "view-aside@": {
+                templateUrl: "/App/View/Aside.html",
+                controller: "AsideController",
+                data: { parent: "account" }
             }
         }
     }).state("index.account.resetpassword", {
@@ -110,7 +116,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     }).state("index.account.feedback", {
-        url: "feedback",
+        url: "/feedback",
         breadcrumb: "Feedback",
         views: {
             "@": {
