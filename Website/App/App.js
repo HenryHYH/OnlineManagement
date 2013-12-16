@@ -126,6 +126,14 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
                 template: "Products"
             }
         }
+    }).state("index.product.detail", {
+        url: "/:type",
+        views: {
+            "@": {
+                templateUrl: "/App/View/Product.html",
+                controller: "ProductController"
+            }
+        }
     });
 });
 

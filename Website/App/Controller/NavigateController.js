@@ -5,11 +5,11 @@
         { icon: "phone", text: "Contact", sref: "index.contact" },
         {
             icon: "list", text: "Products", sref: "index.product", children: [
-                { icon: "", text: "Product A", sref: "a" },
-                { icon: "", text: "Product B", sref: "b" },
+                { icon: "", text: "Product A", sref: "index.product.detail({type:'A'})" },
+                { icon: "", text: "Product B", sref: "index.product.detail({type:'B'})" },
                 { text: "-" },
-                { icon: "", text: "Product C", sref: "c" },
-                { icon: "", text: "Product D", sref: "d" },
+                { icon: "", text: "Product C", sref: "index.product.detail({type:'C'})" },
+                { icon: "", text: "Product D", sref: "index.product.detail({type:'D'})" },
             ]
         }
     ];

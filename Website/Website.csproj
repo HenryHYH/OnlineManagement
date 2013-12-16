@@ -59,11 +59,13 @@
   <ItemGroup>
     <Content Include="App\Controller\AsideController.js" />
     <Content Include="App\Controller\NavigateController.js" />
+    <Content Include="App\Controller\ProductController.js" />
     <Content Include="App\index.html" />
     <Content Include="App\View\Aside.html" />
     <Content Include="App\View\Aside2.html" />
     <Content Include="App\View\BreadCrumb.html" />
     <Content Include="App\View\Navigate.html" />
+    <Content Include="App\View\Product.html" />
     <Content Include="Default.aspx" />
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />

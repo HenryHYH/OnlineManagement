@@ -1,6 +1,6 @@
 ﻿var AsideController = function ($scope, $state) {
     var aside = [];
-    var parent = $state.current.views["view-aside@"].data.parent;
+    var parent = $state.current.views["view-aside@"] ? $state.current.views["view-aside@"].data.parent : "";
 
     if (parent == "account") {
         aside = [
