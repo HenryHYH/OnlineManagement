@@ -8,10 +8,12 @@
     $scope.navigateRight = [
         {
             icon: "gears", text: "My account", sref: "index.account", children: [
-                { icon: "user", text: "My info", sref: "index.account" },
-                { icon: "lock", text: "Reset password", sref: "index.account.resetpassword" }
+                { icon: "user", text: "Basic information", sref: "index.account" },
+                { icon: "lock", text: "Change password", sref: "index.account.resetpassword" },
+                { text: "-" },
+                { icon: "hand-o-right", text: "Feedback", sref: "index.account.feedback" }
             ]
         },
-        { icon: "power-off", text: "Sign out", sref: "signout" }
+        { icon: "power-off", text: "Sign out", sref: "index.book" }
     ]
 }

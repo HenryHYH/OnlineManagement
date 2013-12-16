@@ -91,3 +91,31 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         }
     });
 });
+
+omApp.config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider.state("index.account", {
+        url: "/account",
+        breadcrumb: "Account",
+        views: {
+            "@": {
+                template: "My account"
+            }
+        }
+    }).state("index.account.resetpassword", {
+        url: "/resetpassword",
+        breadcrumb: "Change password",
+        views: {
+            "@": {
+                template: "Reset password"
+            }
+        }
+    }).state("index.account.feedback", {
+        url: "feedback",
+        breadcrumb: "Feedback",
+        views: {
+            "@": {
+                template: "Feedback"
+            }
+        }
+    });
+});
