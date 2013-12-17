@@ -1,5 +1,4 @@
-﻿Fix dropdown parent's sref is null
-AMD || RequiredJS
+﻿AMD || RequiredJS
 Fix footer
 Sign in
 Register

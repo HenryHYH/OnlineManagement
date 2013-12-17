@@ -1,4 +1,4 @@
-﻿var NavigateController = function ($scope) {
+﻿var NavigateController = function ($scope, $state) {
     $scope.navigates = [
         {
             datas: [
@@ -6,7 +6,7 @@
                 { icon: "envelope-o", text: "About", sref: "index.about" },
                 { icon: "phone", text: "Contact", sref: "index.contact" },
                 {
-                    icon: "list", text: "Products", sref: "index.product", children: [
+                    icon: "list", text: "Products", children: [
                         { icon: "", text: "Product A", sref: "index.product.detail({type:'A'})" },
                         { icon: "", text: "Product B", sref: "index.product.detail({type:'B'})" },
                         { text: "-" },
@@ -20,7 +20,7 @@
             position: "right",
             datas: [
                 {
-                    icon: "gears", text: "My account", sref: "index.account", children: [
+                    icon: "gears", text: "My account", sref: "", children: [
                         { icon: "user", text: "Basic information", sref: "index.account" },
                         { icon: "lock", text: "Change password", sref: "index.account.resetpassword" },
                         { text: "-" },
@@ -31,4 +31,12 @@
             ]
         }
     ];
+
+    $scope.href = function (value) {
+        var href = "javascript:void(0);";
+        if (value) {
+            href = $state.href(value);
+        }
+        return href;
+    }
 }
