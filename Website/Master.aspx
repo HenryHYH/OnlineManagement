@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="om" ng-cloak>
-<head runat="server">
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{{$state.current.title || $state.current.breadcrumb || $state.current.name}}</title>
     <link href="/Script/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -66,6 +66,8 @@
     <script type="text/javascript" src="/App/Controller/AsideController.js"></script>
     <script type="text/javascript" src="/App/Controller/ProductController.js"></script>
     <script type="text/javascript" src="/App/Controller/LoginController.js"></script>
+
+    <script type="text/javascript" src="/App/Service/User.js"></script>
 
 </body>
 </html>
