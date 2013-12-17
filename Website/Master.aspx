@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Project name</a>
+                <a class="navbar-brand" ui-sref="index">Project name</a>
             </div>
             <div class="collapse navbar-collapse" ui-view="view-navigate">
             </div>
@@ -65,6 +65,7 @@
     <script type="text/javascript" src="/App/Controller/NavigateController.js"></script>
     <script type="text/javascript" src="/App/Controller/AsideController.js"></script>
     <script type="text/javascript" src="/App/Controller/ProductController.js"></script>
+    <script type="text/javascript" src="/App/Controller/LoginController.js"></script>
 
 </body>
 </html>
