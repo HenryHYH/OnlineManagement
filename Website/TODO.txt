@@ -1,4 +1,5 @@
-﻿AMD || RequiredJS
+﻿Fix menu child href bug
+AMD || RequiredJS
 Fix footer
 Sign in
 Register
