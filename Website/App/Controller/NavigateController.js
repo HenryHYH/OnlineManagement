@@ -7,11 +7,11 @@
                 { icon: "phone", text: "Contact", sref: "index.contact" },
                 {
                     icon: "list", text: "Products", children: [
-                        { icon: "", text: "Product A", sref: "index.product.detail({type:'A'})" },
-                        { icon: "", text: "Product B", sref: "index.product.detail({type:'B'})" },
+                        { icon: "", text: "Product A", sref: "index.product.detail", data: { type: "A" } },
+                        { icon: "", text: "Product B", sref: "index.product.detail", data: { type: "B" } },
                         { text: "-" },
-                        { icon: "", text: "Product C", sref: "index.product.detail({type:'C'})" },
-                        { icon: "", text: "Product D", sref: "index.product.detail({type:'D'})" },
+                        { icon: "", text: "Product C", sref: "index.product.detail", data: { type: "C" } },
+                        { icon: "", text: "Product D", sref: "index.product.detail", data: { type: "D" } },
                     ]
                 }
             ]
@@ -32,10 +32,10 @@
         }
     ];
 
-    $scope.href = function (value) {
+    $scope.href = function (value, data) {
         var href = "javascript:void(0);";
         if (value) {
-            href = $state.href(value);
+            href = $state.href(value, data);
         }
         return href;
     }

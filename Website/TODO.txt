@@ -1,5 +1,4 @@
-﻿Fix menu child href bug
-AMD || RequiredJS
+﻿AMD || RequiredJS
 Fix footer
 Sign in
 Register

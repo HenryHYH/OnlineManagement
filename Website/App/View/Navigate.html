@@ -1,10 +1,10 @@
 ﻿<ul class="nav navbar-nav" ng-repeat="navigate in navigates" ng-class="{'navbar-right':navigate.position == 'right'}">
     <li ng-repeat="item in navigate.datas" ui-sref-active="active" ng-class="{dropdown:item.children && item.children.length > 0}">
-        <a data-toggle="dropdown" role="button" data-target="#" ng-class="{'dropdown-toggle':item.children && item.children.length > 0}" href="{{href(item.sref)}}">
+        <a data-toggle="dropdown" role="button" data-target="#" ng-class="{'dropdown-toggle':item.children && item.children.length > 0}" href="{{href(item.sref, item.data)}}">
             <i class="fa fa-{{item.icon}}"></i>&nbsp;{{item.text}} <b class="caret" ng-show="item.children && item.children.length > 0"></b>
         </a>
         <ul class="dropdown-menu" role="menu" ng-show="item.children && item.children.length > 0">
-            <li ng-repeat="child in item.children" ng-class="{divider:child.text == '-'}"><a ng-if="child.text != '-'" href="{{href(child.sref)}}"><i class="fa fa-{{child.icon}}"></i>&nbsp;&nbsp;{{child.text}}</a></li>
+            <li ng-repeat="child in item.children" ng-class="{divider:child.text == '-'}"><a ng-if="child.text != '-'" href="{{href(child.sref, child.data)}}"><i class="fa fa-{{child.icon}}"></i>&nbsp;&nbsp;{{child.text}}</a></li>
         </ul>
     </li>
 </ul>
