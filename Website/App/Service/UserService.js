@@ -1,7 +1,17 @@
 ﻿omApp.factory("UserService", function () {
+    var current = { userName: "", loginTime: new Date() };
+    var users = [
+        { userName: "Henry", password: "henry", registerTime: new Date() },
+        { userName: "admin", password: "admin", registerTime: new Date() }
+    ];
+
     return {
-        current: { userName: "", loginTime: new Date() },
-        users: [{ userName: "Henry", password: "henry", registerTime: new Date() }, { userName: "admin", password: "admin", registerTime: new Date() }],
+        user: function () { return current; },
+        IsAuthenticated: function () { return current && current.userName },
+        Logout: function () {
+            current = { userName: "", loginTime: new Date() };
+            return true;
+        },
         Login: function (userName, password) {
             var FilterUser = function (val) {
                 return val.userName.toLowerCase() === this.userName && val.password === this.password;
@@ -9,9 +19,9 @@
 
             var flag = false;
             if (userName && password) {
-                var u = this.users.filter(FilterUser, { userName: userName.toLowerCase(), password: password });
+                var u = users.filter(FilterUser, { userName: userName.toLowerCase(), password: password });
                 if (u.length > 0) {
-                    this.current = { userName: u[0].userName, loginTime: new Date() };
+                    current = { userName: u[0].userName, loginTime: new Date() };
                     flag = true;
                 }
             }
@@ -24,9 +34,9 @@
 
             var flag = false;
             if (userName && password) {
-                if (this.users.some(IsUserExists, { userName: userName, password: password })) {
-                    this.current = { userName: userName, loginTime: new Date() };
-                    this.users.push({ userName: userName, password: password, registerTime: new Date() });
+                if (users.some(IsUserExists, { userName: userName, password: password })) {
+                    current = { userName: userName, loginTime: new Date() };
+                    users.push({ userName: userName, password: password, registerTime: new Date() });
                     flag = true;
                 }
             }

@@ -1,5 +1,6 @@
 ﻿var NavigateController = function ($scope, $state, NavigateService, UserService) {
-    $scope.userName = UserService.current.userName;
+    $scope.user = UserService.user;
+    $scope.IsAuthenticated = UserService.IsAuthenticated;
 
     $scope.navigates = NavigateService.navigates;
 
