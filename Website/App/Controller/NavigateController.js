@@ -1,4 +1,6 @@
-﻿var NavigateController = function ($scope, $state, NavigateService) {
+﻿var NavigateController = function ($scope, $state, NavigateService, UserService) {
+    $scope.userName = UserService.current.userName;
+
     $scope.navigates = NavigateService.navigates;
 
     $scope.href = function (value, data) {

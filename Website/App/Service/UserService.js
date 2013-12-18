@@ -1,6 +1,6 @@
 ﻿omApp.factory("UserService", function () {
     return {
-        current: { userName: "Henry", loginTime: new Date() },
+        current: { userName: "", loginTime: new Date() },
         users: [{ userName: "Henry", password: "henry", registerTime: new Date() }, { userName: "admin", password: "admin", registerTime: new Date() }],
         Login: function (userName, password) {
             var FilterUser = function (val) {
