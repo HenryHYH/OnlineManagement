@@ -6,17 +6,24 @@ omApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state,
 }]);
 
 omApp.config(function ($breadcrumbProvider) {
-    $breadcrumbProvider.setPrefixState('index');
+    $breadcrumbProvider.setPrefixState('home');
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/index");
+    $urlRouterProvider.otherwise("/home");
+});
+
+omApp.config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider.state("home", {
+        title: "Home",
+        url: "/home"
+    });
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index", {
         title: "Hello index title",
-        breadcrumb: "Home",
+        breadcrumb: "Index",
         url: "/index",
         views: {
             "@": {
