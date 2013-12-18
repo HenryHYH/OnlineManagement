@@ -62,7 +62,7 @@
     <Content Include="App\Controller\NavigateController.js" />
     <Content Include="App\Controller\ProductController.js" />
     <Content Include="App\index.html" />
-    <Content Include="App\Service\User.js" />
+    <Content Include="App\Service\UserService.js" />
     <Content Include="App\View\Aside.html" />
     <Content Include="App\View\Aside2.html" />
     <Content Include="App\View\BreadCrumb.html" />
