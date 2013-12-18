@@ -1,4 +1,5 @@
-﻿abstract
+﻿Logout
+When is not Authenticated, hide Logout & Account nav
 AMD || RequiredJS 
 	https://github.com/matys84pl/angularjs-requirejs-lazy-controllers
 	http://www.startersquad.com/blog/angularjs-requirejs/
