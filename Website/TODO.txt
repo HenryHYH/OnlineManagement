@@ -1,4 +1,6 @@
-﻿AMD || RequiredJS
+﻿AMD || RequiredJS 
+	https://github.com/matys84pl/angularjs-requirejs-lazy-controllers
+	http://www.startersquad.com/blog/angularjs-requirejs/
 Fix footer
 Sign in
 Register
