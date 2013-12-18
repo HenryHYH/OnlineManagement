@@ -68,6 +68,7 @@
     <script type="text/javascript" src="/App/Controller/ProductController.js"></script>
     <script type="text/javascript" src="/App/Controller/LoginController.js"></script>
     <!-- Service -->
+    <script type="text/javascript" src="/App/Service/NavigateService.js"></script>
     <script type="text/javascript" src="/App/Service/UserService.js"></script>
 
 </body>
