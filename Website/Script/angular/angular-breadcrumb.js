@@ -53,9 +53,10 @@ angular.module('ui-breadcrumb', ['ui.router.state']).provider('$breadcrumb', fun
             var chain = $breadcrumb.getStatesChain();
             var stateNames = [];
             angular.forEach(chain, function (value) {
-                stateNames.push({ name: value.breadcrumb || value.title || value.name, sref: value.name });
+                if (!value.skipBreadcrumb) {
+                    stateNames.push({ name: value.breadcrumb || value.title || value.name, sref: value.name });
+                }
             });
-            //element.text(stateNames.join(' / '));
             scope.breadcrumbs = stateNames;
         }, true);
     };
