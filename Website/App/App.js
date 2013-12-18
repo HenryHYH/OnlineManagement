@@ -32,25 +32,6 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
                 controller: "NavigateController"
             }
         }
-    }).state("index.list", {
-        title: "Hello index.list title",
-        url: "/list",
-        views: {
-            "@": {
-                template: "Hello list <a ui-sref='.detail'>Index</a>"
-            },
-            "view-aside@": {
-                templateUrl: "/App/View/Aside2.html"
-            }
-        }
-    }).state("index.list.detail", {
-        breadcrumb: "Detail",
-        url: "/detail",
-        views: {
-            "@": {
-                template: "Hello detail <a ui-sref='index'>Index</a>"
-            }
-        }
     });
 });
 

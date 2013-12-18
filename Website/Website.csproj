@@ -66,7 +66,6 @@
     <Content Include="App\Service\NavigateService.js" />
     <Content Include="App\Service\UserService.js" />
     <Content Include="App\View\Aside.html" />
-    <Content Include="App\View\Aside2.html" />
     <Content Include="App\View\BreadCrumb.html" />
     <Content Include="App\View\Navigate.html" />
     <Content Include="App\View\Product.html" />
