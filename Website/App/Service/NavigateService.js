@@ -20,7 +20,7 @@
                 position: "right",
                 datas: [
                     {
-                        icon: "gears", text: "My account", sref: "", children: [
+                        icon: "gears", text: "Account", sref: "", children: [
                             { icon: "user", text: "Basic information", sref: "index.account" },
                             { icon: "lock", text: "Change password", sref: "index.account.resetpassword" },
                             { text: "-" },
