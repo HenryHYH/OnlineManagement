@@ -1,10 +1,8 @@
-﻿var LoginController = function ($scope, user) {
+﻿var LoginController = function ($scope, UserService) {
     $scope.login = function () {
-        var userName = this.userName, password = this.password;
-        if (userName && password) {
-            if (user.every(function (value) { return value.userName.toLowerCase() !== userName.toLowerCase(); })) {
-                user.push({ userName: this.userName, loginTime: new Date() });
-            }
-        }
+        alert(UserService.current.userName);
+        var result = UserService.Login(this.userName, this.password);
+        alert(result);
+        alert(UserService.current.userName);
     }
 }

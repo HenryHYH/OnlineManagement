@@ -62,11 +62,12 @@
 
     <!-- Custom -->
     <script type="text/javascript" src="/App/App.js"></script>
+    <!-- Controller -->
     <script type="text/javascript" src="/App/Controller/NavigateController.js"></script>
     <script type="text/javascript" src="/App/Controller/AsideController.js"></script>
     <script type="text/javascript" src="/App/Controller/ProductController.js"></script>
     <script type="text/javascript" src="/App/Controller/LoginController.js"></script>
-
+    <!-- Service -->
     <script type="text/javascript" src="/App/Service/User.js"></script>
 
 </body>
