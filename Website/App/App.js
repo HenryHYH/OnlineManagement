@@ -19,7 +19,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         url: "/home",
         views: {
             "": {
-                templateUrl: "/App/Index.html"
+                templateUrl: "/App/View/Home.html"
             },
             "view-navigate": {
                 templateUrl: "/App/View/Navigate.html",
@@ -35,7 +35,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         abstract: true,
         views: {
             "": {
-                templateUrl: "/App/Template.html"
+                templateUrl: "/App/Template/Column-2.html"
             },
             "view-navigate": {
                 templateUrl: "/App/View/Navigate.html",

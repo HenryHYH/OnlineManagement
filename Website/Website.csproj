@@ -62,13 +62,13 @@
     <Content Include="App\Controller\NavigateController.js" />
     <Content Include="App\Controller\ProductController.js" />
     <Content Include="App\Controller\RegisterController.js" />
-    <Content Include="App\Index.html" />
     <Content Include="App\Service\AsideService.js" />
     <Content Include="App\Service\NavigateService.js" />
     <Content Include="App\Service\UserService.js" />
-    <Content Include="App\Template.html" />
+    <Content Include="App\Template\Column-2.html" />
     <Content Include="App\View\Aside.html" />
     <Content Include="App\View\BreadCrumb.html" />
+    <Content Include="App\View\Home.html" />
     <Content Include="App\View\Navigate.html" />
     <Content Include="App\View\Product.html" />
     <Content Include="Default.aspx" />
