@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" ui-sref="index">Project name</a>
+                <a class="navbar-brand" ui-sref="home">Project name</a>
             </div>
             <div class="collapse navbar-collapse" ui-view="view-navigate">
             </div>
