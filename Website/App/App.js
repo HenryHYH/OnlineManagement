@@ -16,25 +16,28 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("home", {
         title: "Home",
-        url: "/home"
+        url: "/home",
+        views: {
+            "": {
+                templateUrl: "/App/Index.html"
+            },
+            "view-navigate": {
+                templateUrl: "/App/View/Navigate.html",
+                controller: "NavigateController"
+            }
+        }
     });
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index", {
-        title: "Hello index title",
-        breadcrumb: "Index",
-        url: "/index",
+        skipBreadcrumb: true,
+        abstract: true,
         views: {
-            "@": {
-                templateUrl: "/App/index.html"
+            "": {
+                templateUrl: "/App/Template.html"
             },
-            "view-aside@": {
-                templateUrl: "/App/View/Aside.html",
-                controller: "AsideController",
-                data: { parent: "index" }
-            },
-            "view-navigate@": {
+            "view-navigate": {
                 templateUrl: "/App/View/Navigate.html",
                 controller: "NavigateController"
             }
@@ -86,8 +89,12 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         url: "^/about",
         breadcrumb: "About",
         views: {
-            "@": {
+            "": {
                 template: "About"
+            },
+            "view-aside": {
+                templateUrl: "/App/View/Aside.html",
+                controller: "AsideController"
             }
         }
     });
@@ -98,8 +105,12 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         url: "^/contact",
         breadcrumb: "Contact",
         views: {
-            "@": {
+            "": {
                 template: "Contact"
+            },
+            "view-aside": {
+                templateUrl: "/App/View/Aside.html",
+                controller: "AsideController"
             }
         }
     });
@@ -110,14 +121,19 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         url: "^/product",
         breadcrumb: "Products",
         views: {
-            "@": {
+            "": {
                 template: "Products"
+            },
+            "view-aside": {
+                templateUrl: "/App/View/Aside.html",
+                controller: "AsideController"
             }
-        }
+        },
+        data: { parent: "product" }
     }).state("index.product.detail", {
         url: "/:type",
         views: {
-            "@": {
+            "@index": {
                 templateUrl: "/App/View/Product.html",
                 controller: "ProductController"
             }
@@ -130,20 +146,20 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         url: "^/account",
         breadcrumb: "Account",
         views: {
-            "@": {
+            "": {
                 template: "My account"
             },
-            "view-aside@": {
+            "view-aside": {
                 templateUrl: "/App/View/Aside.html",
-                controller: "AsideController",
-                data: { parent: "account" }
+                controller: "AsideController"
             }
-        }
+        },
+        data: { parent: "account" }
     }).state("index.account.resetpassword", {
         url: "/resetpassword",
         breadcrumb: "Change password",
         views: {
-            "@": {
+            "@index": {
                 template: "Reset password"
             }
         }
@@ -151,7 +167,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         url: "/feedback",
         breadcrumb: "Feedback",
         views: {
-            "@": {
+            "@index": {
                 template: "Feedback"
             }
         }

@@ -20,24 +20,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" ui-sref="home">Project name</a>
+                <a class="navbar-brand" ui-sref="home"><i class="fa fa-home"></i>&nbsp;Project name</a>
             </div>
             <div class="collapse navbar-collapse" ui-view="view-navigate">
             </div>
         </div>
     </div>
-    <div class="container container-full container-full-height">
-        <div class="row">
-            <div class="col-md-12" ng-include="'/App/View/BreadCrumb.html'"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-2" ui-view="view-aside">
-            </div>
-            <div class="col-md-10">
-                <div class="well" ui-view></div>
-                <div class="well"><a href="#" ui-sref="index" ui-sref-active="btn btn-success">Test</a></div>
-            </div>
-        </div>
+    <div class="container container-full container-full-height" ui-view>
     </div>
     <div class="footer navbar-inverse">
         <div class="container">

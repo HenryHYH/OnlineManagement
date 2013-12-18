@@ -3,7 +3,6 @@
         navigates: [
             {
                 datas: [
-                    { icon: "home", text: "Home", sref: "home" },
                     { icon: "envelope-o", text: "About", sref: "index.about" },
                     { icon: "phone", text: "Contact", sref: "index.contact" },
                     {
