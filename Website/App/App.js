@@ -95,7 +95,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index.about", {
-        url: "/about",
+        url: "^/about",
         breadcrumb: "About",
         views: {
             "@": {
@@ -107,7 +107,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index.contact", {
-        url: "/contact",
+        url: "^/contact",
         breadcrumb: "Contact",
         views: {
             "@": {
@@ -119,7 +119,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index.product", {
-        url: "/product",
+        url: "^/product",
         breadcrumb: "Products",
         views: {
             "@": {
@@ -139,7 +139,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("index.account", {
-        url: "/account",
+        url: "^/account",
         breadcrumb: "Account",
         views: {
             "@": {
