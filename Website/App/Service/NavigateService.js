@@ -16,11 +16,11 @@
                     },
                     {
                         icon: "list", text: "Hello kitty", children: [
-                            { icon: "search", text: "Search", sref: "column-1.search" },
-                            { icon: "book", text: "Book", sref: "column-1.book" },
-                            { icon: "refresh", text: "Refresh", sref: "column-1.refresh" },
-                            { icon: "adjust", text: "Adjust", sref: "column-1.adjust" },
-                            { icon: "spinner", text: "Spinner", sref: "column-1.spinner" }
+                            { icon: "search fa-spin", text: "Search", sref: "column-1.search" },
+                            { icon: "book fa-spin", text: "Book", sref: "column-1.book" },
+                            { icon: "refresh fa-spin", text: "Refresh", sref: "column-1.refresh" },
+                            { icon: "adjust fa-spin", text: "Adjust", sref: "column-1.adjust" },
+                            { icon: "spinner fa-spin", text: "Spinner", sref: "column-1.spinner" }
                         ]
                     }
                 ]
