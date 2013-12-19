@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="App\Controller\AsideController.js" />
     <Content Include="App\Controller\LoginController.js" />
+    <Content Include="App\Controller\LogoutController.js" />
     <Content Include="App\Controller\NavigateController.js" />
     <Content Include="App\Controller\ProductController.js" />
     <Content Include="App\Controller\RegisterController.js" />
