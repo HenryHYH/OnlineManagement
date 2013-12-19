@@ -1,4 +1,5 @@
-﻿Fix Logout when user in account
+﻿Change to html5mode
+Fix Logout when user in account
 AMD || RequiredJS 
 	https://github.com/matys84pl/angularjs-requirejs-lazy-controllers
 	http://www.startersquad.com/blog/angularjs-requirejs/

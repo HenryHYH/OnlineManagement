@@ -19,15 +19,16 @@ omApp.config(function ($breadcrumbProvider) {
 });
 
 // Default route
-omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/home");
+omApp.config(function ($urlRouterProvider, $locationProvider) {
+    $urlRouterProvider.otherwise("/");
+    //$locationProvider.html5Mode(true);
 });
 
 // Home
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("home", {
         title: "Home",
-        url: "/home",
+        url: "/",
         views: {
             "": {
                 templateUrl: "/App/View/Home.html"
@@ -49,7 +50,7 @@ omApp.config(function ($stateProvider) {
 });
 
 // Column-2 layout
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("column-2", {
         abstract: true,
         views: {
@@ -65,7 +66,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 // About
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("column-2.about", {
         url: "^/about",
         breadcrumb: "About",
@@ -82,7 +83,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 // Contact
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("column-2.contact", {
         url: "^/contact",
         breadcrumb: "Contact",
@@ -99,7 +100,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 // Product
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("column-2.product", {
         url: "^/product",
         breadcrumb: "Products",
@@ -125,7 +126,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 // Account
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("column-2.account", {
         url: "^/account",
         breadcrumb: "Account",
@@ -159,7 +160,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 // Column-1 layout
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("column-1", {
         abstract: true,
         views: {
@@ -175,7 +176,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 // Hello kitty
-omApp.config(function ($stateProvider, $urlRouterProvider) {
+omApp.config(function ($stateProvider) {
     $stateProvider.state("column-1.search", {
         url: "/search",
         views: {
