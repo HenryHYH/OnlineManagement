@@ -35,7 +35,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         abstract: true,
         views: {
             "": {
-                templateUrl: "/App/Template/Column-2.html"
+                templateUrl: "/App/Layout/Column-2.html"
             },
             "view-navigate": {
                 templateUrl: "/App/View/Navigate.html",
