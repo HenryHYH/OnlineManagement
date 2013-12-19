@@ -3,15 +3,15 @@
         navigates: [
             {
                 datas: [
-                    { icon: "envelope-o", text: "About", sref: "index.about" },
-                    { icon: "phone", text: "Contact", sref: "index.contact" },
+                    { icon: "envelope-o", text: "About", sref: "column-2.about" },
+                    { icon: "phone", text: "Contact", sref: "column-2.contact" },
                     {
                         icon: "list", text: "Products", children: [
-                            { icon: "android", text: "Product A", sref: "index.product.detail", data: { type: "A" } },
-                            { icon: "apple", text: "Product B", sref: "index.product.detail", data: { type: "B" } },
+                            { icon: "android", text: "Product A", sref: "column-2.product.detail", data: { type: "A" } },
+                            { icon: "apple", text: "Product B", sref: "column-2.product.detail", data: { type: "B" } },
                             { text: "-" },
-                            { icon: "windows", text: "Product C", sref: "index.product.detail", data: { type: "C" } },
-                            { icon: "github-square", text: "Product D", sref: "index.product.detail", data: { type: "D" } },
+                            { icon: "windows", text: "Product C", sref: "column-2.product.detail", data: { type: "C" } },
+                            { icon: "github-square", text: "Product D", sref: "column-2.product.detail", data: { type: "D" } },
                         ]
                     }
                 ]
@@ -21,13 +21,13 @@
                 datas: [
                     {
                         icon: "gears", text: "Account", sref: "", children: [
-                            { icon: "user", text: "Basic information", sref: "index.account" },
-                            { icon: "lock", text: "Change password", sref: "index.account.resetpassword" },
+                            { icon: "user", text: "Basic information", sref: "column-2.account" },
+                            { icon: "lock", text: "Change password", sref: "column-2.account.resetpassword" },
                             { text: "-" },
-                            { icon: "hand-o-right", text: "Feedback", sref: "index.account.feedback" }
+                            { icon: "hand-o-right", text: "Feedback", sref: "column-2.account.feedback" }
                         ]
                     },
-                    { icon: "power-off", text: "Sign out", sref: "index.book" }
+                    { icon: "power-off", text: "Sign out", sref: "column-2.book" }
                 ]
             }
         ]

@@ -30,7 +30,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index", {
+    $stateProvider.state("column-2", {
         skipBreadcrumb: true,
         abstract: true,
         views: {
@@ -46,35 +46,35 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index.search", {
+    $stateProvider.state("column-2.search", {
         url: "/search",
         views: {
             "@": {
                 template: "Search"
             }
         }
-    }).state("index.book", {
+    }).state("column-2.book", {
         url: "/book",
         views: {
             "@": {
                 template: "Book"
             }
         }
-    }).state("index.refresh", {
+    }).state("column-2.refresh", {
         url: "/refresh",
         views: {
             "@": {
                 template: "Refresh"
             }
         }
-    }).state("index.adjust", {
+    }).state("column-2.adjust", {
         url: "/adjust",
         views: {
             "@": {
                 template: "Adjust"
             }
         }
-    }).state("index.spinner", {
+    }).state("column-2.spinner", {
         url: "/spinner",
         views: {
             "@": {
@@ -85,7 +85,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index.about", {
+    $stateProvider.state("column-2.about", {
         url: "^/about",
         breadcrumb: "About",
         views: {
@@ -101,7 +101,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index.contact", {
+    $stateProvider.state("column-2.contact", {
         url: "^/contact",
         breadcrumb: "Contact",
         views: {
@@ -117,7 +117,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index.product", {
+    $stateProvider.state("column-2.product", {
         url: "^/product",
         breadcrumb: "Products",
         views: {
@@ -130,10 +130,10 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             }
         },
         data: { parent: "product" }
-    }).state("index.product.detail", {
+    }).state("column-2.product.detail", {
         url: "/:type",
         views: {
-            "@index": {
+            "@column-2": {
                 templateUrl: "/App/View/Product.html",
                 controller: "ProductController"
             }
@@ -142,7 +142,7 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("index.account", {
+    $stateProvider.state("column-2.account", {
         url: "^/account",
         breadcrumb: "Account",
         views: {
@@ -155,19 +155,19 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             }
         },
         data: { parent: "account" }
-    }).state("index.account.resetpassword", {
+    }).state("column-2.account.resetpassword", {
         url: "/resetpassword",
         breadcrumb: "Change password",
         views: {
-            "@index": {
+            "@column-2": {
                 template: "Reset password"
             }
         }
-    }).state("index.account.feedback", {
+    }).state("column-2.account.feedback", {
         url: "/feedback",
         breadcrumb: "Feedback",
         views: {
-            "@index": {
+            "@column-2": {
                 template: "Feedback"
             }
         }
