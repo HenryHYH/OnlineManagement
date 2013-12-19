@@ -34,9 +34,10 @@
                             { icon: "lock", text: "Change password", sref: "column-2.account.resetpassword" },
                             { text: "-" },
                             { icon: "hand-o-right", text: "Feedback", sref: "column-2.account.feedback" }
-                        ]
+                        ],
+                        authenticated: true
                     },
-                    { icon: "power-off", text: "Sign out", sref: "logout" }
+                    { icon: "power-off", text: "Sign out", sref: "logout", authenticated: true }
                 ]
             }
         ]

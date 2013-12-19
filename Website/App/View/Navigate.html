@@ -1,5 +1,5 @@
 ﻿<ul class="nav navbar-nav" ng-repeat="navigate in navigates" ng-class="{'navbar-right':navigate.position == 'right'}">
-    <li ng-repeat="item in navigate.datas" ui-sref-active="active" ng-class="{dropdown:item.children && item.children.length > 0}">
+    <li ng-if="item.authenticated ? IsAuthenticated() : true" ng-repeat="item in navigate.datas" ui-sref-active="active" ng-class="{dropdown:item.children && item.children.length > 0}">
         <a data-toggle="dropdown" role="button" data-target="#" ng-class="{'dropdown-toggle':item.children && item.children.length > 0}" href="{{href(item.sref, item.data)}}">
             <i class="fa fa-{{item.icon}}"></i>&nbsp;{{item.text}} <b class="caret" ng-if="item.children && item.children.length > 0"></b>
         </a>
