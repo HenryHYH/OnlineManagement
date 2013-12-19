@@ -13,6 +13,15 @@
                             { icon: "windows", text: "Product C", sref: "column-2.product.detail", data: { type: "C" } },
                             { icon: "github-square", text: "Product D", sref: "column-2.product.detail", data: { type: "D" } },
                         ]
+                    },
+                    {
+                        icon: "list", text: "Hello kitty", children: [
+                            { icon: "search", text: "Search", sref: "column-1.search" },
+                            { icon: "book", text: "Book", sref: "column-1.book" },
+                            { icon: "refresh", text: "Refresh", sref: "column-1.refresh" },
+                            { icon: "adjust", text: "Adjust", sref: "column-1.adjust" },
+                            { icon: "spinner", text: "Spinner", sref: "column-1.spinner" }
+                        ]
                     }
                 ]
             },
@@ -27,7 +36,7 @@
                             { icon: "hand-o-right", text: "Feedback", sref: "column-2.account.feedback" }
                         ]
                     },
-                    { icon: "power-off", text: "Sign out", sref: "column-2.book" }
+                    { icon: "power-off", text: "Sign out", sref: "logout" }
                 ]
             }
         ]

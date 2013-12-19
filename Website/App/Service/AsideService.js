@@ -12,11 +12,11 @@
             { icon: "github-square", text: "Product D", sref: "column-2.product.detail({type:'D'})" }
         ],
         "": [
-            { icon: "search", text: "Search", sref: "column-2.search" },
-            { icon: "book", text: "Book", sref: "column-2.book" },
-            { icon: "refresh", text: "Refresh", sref: "column-2.refresh" },
-            { icon: "adjust", text: "Adjust", sref: "column-2.adjust" },
-            { icon: "spinner", text: "Spinner", sref: "column-2.spinner" }
+            { icon: "search", text: "Search", sref: "column-1.search" },
+            { icon: "book", text: "Book", sref: "column-1.book" },
+            { icon: "refresh", text: "Refresh", sref: "column-1.refresh" },
+            { icon: "adjust", text: "Adjust", sref: "column-1.adjust" },
+            { icon: "spinner", text: "Spinner", sref: "column-1.spinner" }
         ]
     };
 

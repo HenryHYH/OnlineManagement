@@ -31,7 +31,6 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
 
 omApp.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("column-2", {
-        skipBreadcrumb: true,
         abstract: true,
         views: {
             "": {
@@ -40,45 +39,6 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
             "view-navigate": {
                 templateUrl: "/App/View/Navigate.html",
                 controller: "NavigateController"
-            }
-        }
-    });
-});
-
-omApp.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state("column-2.search", {
-        url: "/search",
-        views: {
-            "@": {
-                template: "Search"
-            }
-        }
-    }).state("column-2.book", {
-        url: "/book",
-        views: {
-            "@": {
-                template: "Book"
-            }
-        }
-    }).state("column-2.refresh", {
-        url: "/refresh",
-        views: {
-            "@": {
-                template: "Refresh"
-            }
-        }
-    }).state("column-2.adjust", {
-        url: "/adjust",
-        views: {
-            "@": {
-                template: "Adjust"
-            }
-        }
-    }).state("column-2.spinner", {
-        url: "/spinner",
-        views: {
-            "@": {
-                template: "Spinner"
             }
         }
     });
@@ -169,6 +129,60 @@ omApp.config(function ($stateProvider, $urlRouterProvider) {
         views: {
             "@column-2": {
                 template: "Feedback"
+            }
+        }
+    });
+});
+
+omApp.config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider.state("column-1", {
+        abstract: true,
+        views: {
+            "": {
+                templateUrl: "/App/Layout/Column-1.html"
+            },
+            "view-navigate": {
+                templateUrl: "/App/View/Navigate.html",
+                controller: "NavigateController"
+            }
+        }
+    });
+});
+
+omApp.config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider.state("column-1.search", {
+        url: "/search",
+        views: {
+            "": {
+                template: "Search"
+            }
+        }
+    }).state("column-1.book", {
+        url: "/book",
+        views: {
+            "": {
+                template: "Book"
+            }
+        }
+    }).state("column-1.refresh", {
+        url: "/refresh",
+        views: {
+            "": {
+                template: "Refresh"
+            }
+        }
+    }).state("column-1.adjust", {
+        url: "/adjust",
+        views: {
+            "": {
+                template: "Adjust"
+            }
+        }
+    }).state("column-1.spinner", {
+        url: "/spinner",
+        views: {
+            "": {
+                template: "Spinner"
             }
         }
     });

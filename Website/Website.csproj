@@ -62,6 +62,7 @@
     <Content Include="App\Controller\NavigateController.js" />
     <Content Include="App\Controller\ProductController.js" />
     <Content Include="App\Controller\RegisterController.js" />
+    <Content Include="App\Layout\Column-1.html" />
     <Content Include="App\Service\AsideService.js" />
     <Content Include="App\Service\NavigateService.js" />
     <Content Include="App\Service\UserService.js" />
