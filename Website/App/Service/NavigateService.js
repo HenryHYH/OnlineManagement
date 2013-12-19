@@ -7,11 +7,11 @@
                     { icon: "phone", text: "Contact", sref: "index.contact" },
                     {
                         icon: "list", text: "Products", children: [
-                            { icon: "", text: "Product A", sref: "index.product.detail", data: { type: "A" } },
-                            { icon: "", text: "Product B", sref: "index.product.detail", data: { type: "B" } },
+                            { icon: "android", text: "Product A", sref: "index.product.detail", data: { type: "A" } },
+                            { icon: "apple", text: "Product B", sref: "index.product.detail", data: { type: "B" } },
                             { text: "-" },
-                            { icon: "", text: "Product C", sref: "index.product.detail", data: { type: "C" } },
-                            { icon: "", text: "Product D", sref: "index.product.detail", data: { type: "D" } },
+                            { icon: "windows", text: "Product C", sref: "index.product.detail", data: { type: "C" } },
+                            { icon: "github-square", text: "Product D", sref: "index.product.detail", data: { type: "D" } },
                         ]
                     }
                 ]
