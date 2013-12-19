@@ -1,7 +1,7 @@
 ﻿var omApp = angular.module('om', ['ui.router', 'ui-breadcrumb']);
 
 // Global variable
-omApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
+omApp.run(['$rootScope', '$state', '$stateParams', "$location", function ($rootScope, $state, $stateParams, $location) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
 
@@ -10,6 +10,14 @@ omApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state,
         var state = $rootScope.$state;
         state.$previousState = from;
         $rootScope.$state = state;
+    });
+
+    $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+        //if (fromState.data && fromState.data.authenticated) {
+        //    //event.preventDefault();
+        //    //$state.transitionTo('home');
+        //    $location.path('/about');
+        //}
     });
 }]);
 
@@ -139,7 +147,7 @@ omApp.config(function ($stateProvider) {
                 controller: "AsideController"
             }
         },
-        data: { parent: "account" }
+        data: { parent: "account", authenticated: true }
     }).state("column-2.account.resetpassword", {
         url: "/resetpassword",
         breadcrumb: "Change password",
