@@ -60,6 +60,7 @@
     <script type="text/javascript" src="/App/Controller/ProductController.js"></script>
     <script type="text/javascript" src="/App/Controller/LoginController.js"></script>
     <script type="text/javascript" src="/App/Controller/LogoutController.js"></script>
+    <script type="text/javascript" src="/App/Controller/SearchController.js"></script>
     <!-- Service -->
     <script type="text/javascript" src="/App/Service/NavigateService.js"></script>
     <script type="text/javascript" src="/App/Service/AsideService.js"></script>
