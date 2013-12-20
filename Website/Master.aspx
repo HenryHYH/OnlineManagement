@@ -49,6 +49,7 @@
     <!-- angular -->
     <script type="text/javascript" src="/Script/angular/angular.min.js"></script>
     <script type="text/javascript" src="/Script/angular/angular-ui-router.js"></script>
+    <script type="text/javascript" src="/Script/angular/angular-ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="/Script/angular/angular-breadcrumb.js"></script>
 
     <!-- Custom -->
