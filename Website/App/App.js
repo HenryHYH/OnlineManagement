@@ -9,9 +9,11 @@ omApp.run(function ($rootScope, $state, $stateParams, $location, UserService) {
     $rootScope.$on('$stateChangeSuccess', function (event, to, toParams, from, fromParams) {
         var state = $rootScope.$state;
         state.$previousState = from;
+        state.$previousStateParams = fromParams;
         $rootScope.$state = state;
     });
 
+    // If state need authenticated && current user not authenticated, goto home state
     $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
         if (toState.data && toState.data.authenticated && !UserService.IsAuthenticated()) {
             event.preventDefault();
