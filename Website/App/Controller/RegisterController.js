@@ -1,7 +1,19 @@
-﻿var RegisterController = function ($scope, UserService) {
+﻿var RegisterController = function ($scope, $modal) {
+    $scope.open = function () {
+        $modal.open({
+            templateUrl: "/App/View/Register.html",
+            controller: "RegisterInstanceController"
+        });
+    };
+}
+
+var RegisterInstanceController = function ($scope, $modalInstance, UserService) {
+    $scope.close = function () {
+        $modalInstance.dismiss();
+    }
     $scope.register = function () {
-        var result = UserService.Register(this.userName, this.password);
-        alert(result);
-        alert(UserService.current.userName);
+        if (UserService.Register({ userName: this.name, password: this.password, email: this.email })) {
+            close();
+        }
     }
 }

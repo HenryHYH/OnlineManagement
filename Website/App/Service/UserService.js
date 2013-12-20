@@ -12,7 +12,8 @@
             current = { userName: "", loginTime: new Date() };
             return true;
         },
-        Login: function (userName, password) {
+        Login: function (info) {
+            var userName = info.userName, password = info.password;
             var FilterUser = function (val) {
                 return val.userName.toLowerCase() === this.userName && val.password === this.password;
             };
@@ -27,14 +28,15 @@
             }
             return flag;
         },
-        Register: function (userName, password) {
+        Register: function (info) {
+            var userName = info.userName, password = info.password, email = info.email;
             var IsUserExists = function (val) {
                 return val.userName.toLowerCase() === this.userName.toLowerCase();
             }
 
             var flag = false;
             if (userName && password) {
-                if (users.some(IsUserExists, { userName: userName, password: password })) {
+                if (!users.some(IsUserExists, { userName: userName, password: password })) {
                     current = { userName: userName, loginTime: new Date() };
                     users.push({ userName: userName, password: password, registerTime: new Date() });
                     flag = true;

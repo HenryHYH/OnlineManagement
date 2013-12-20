@@ -1,0 +1,43 @@
+﻿<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="text-center"><i class="fa fa-edit"></i>&nbsp;&nbsp;Sign up</h2>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="txtEmail" class="col-md-offset-1 col-md-1 control-label">
+                        <i class="fa fa-envelope-o"></i>
+                    </label>
+                    <div class="col-md-9">
+                        <input type="email" class="form-control" placeholder="Email" ng-model="email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtName" class="col-md-offset-1 col-md-1 control-label">
+                        <i class="fa fa-user"></i>
+                    </label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" placeholder="Name" ng-model="name" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtPassword" class="col-md-offset-1 col-md-1 control-label">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" placeholder="Password" ng-model="password" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" ng-click="close()" tooltip="Cancel">
+                <i class="fa fa-times"></i>
+            </button>
+            <button class="btn btn-success" ng-click="register()" tooltip="Sign up">
+                <i class="fa fa-share-square-o"></i>
+            </button>
+        </div>
+    </div>
+</div>

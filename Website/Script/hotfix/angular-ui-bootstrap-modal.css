@@ -1,0 +1,3 @@
+﻿.modal { display: block; height: 0; overflow: visible; }
+.modal-body:before, .modal-body:after { display: table; content: " "; }
+.modal-header:before, .modal-header:after { display: table; content: " "; }

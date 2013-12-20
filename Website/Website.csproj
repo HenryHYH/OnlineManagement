@@ -74,6 +74,7 @@
     <Content Include="App\View\Home.html" />
     <Content Include="App\View\Navigate.html" />
     <Content Include="App\View\Product.html" />
+    <Content Include="App\View\Register.html" />
     <Content Include="Default.aspx" />
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
@@ -89,6 +90,7 @@
     <Content Include="Script\angular\angular.min.js" />
     <Content Include="App\App.js" />
     <Content Include="Script\bootstrap\custom\TooltipLauncher.js" />
+    <Content Include="Script\hotfix\angular-ui-bootstrap-modal.css" />
     <Content Include="Style\Custom.css" />
     <Content Include="Style\fontawesome\css\font-awesome.css" />
     <Content Include="Style\fontawesome\css\font-awesome.min.css" />

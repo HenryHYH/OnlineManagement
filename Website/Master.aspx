@@ -10,6 +10,7 @@
     <title>{{$state.current.title || $state.current.breadcrumb || $state.current.name}}</title>
     <link href="/Script/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/Style/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/Script/hotfix/angular-ui-bootstrap-modal.css" rel="stylesheet" />
     <link href="/Style/Custom.css" rel="stylesheet" />
 </head>
 <body>
@@ -61,6 +62,7 @@
     <script type="text/javascript" src="/App/Controller/LoginController.js"></script>
     <script type="text/javascript" src="/App/Controller/LogoutController.js"></script>
     <script type="text/javascript" src="/App/Controller/SearchController.js"></script>
+    <script type="text/javascript" src="/App/Controller/RegisterController.js"></script>
     <!-- Service -->
     <script type="text/javascript" src="/App/Service/NavigateService.js"></script>
     <script type="text/javascript" src="/App/Service/AsideService.js"></script>
