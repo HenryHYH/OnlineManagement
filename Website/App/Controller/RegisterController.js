@@ -13,7 +13,7 @@ var RegisterInstanceController = function ($scope, $modalInstance, UserService) 
     }
     $scope.register = function () {
         if (UserService.Register({ userName: this.name, password: this.password, email: this.email })) {
-            close();
+            $scope.close();
         }
     }
 }
