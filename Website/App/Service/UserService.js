@@ -7,7 +7,7 @@
 
     return {
         user: function () { return current; },
-        IsAuthenticated: function () { return current && current.userName },
+        IsAuthenticated: function () { return !!(current && current.userName) },
         Logout: function () {
             current = { userName: "", loginTime: new Date() };
             return true;

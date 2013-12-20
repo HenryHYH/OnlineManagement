@@ -22,6 +22,7 @@
 
     return {
         Asides: function (param) {
+            if (!param) param = "";
             return asides[param];
         }
     };

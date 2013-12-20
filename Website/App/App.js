@@ -1,7 +1,7 @@
 ﻿var omApp = angular.module('om', ['ui.router', 'ui-breadcrumb']);
 
 // Global variable
-omApp.run(['$rootScope', '$state', '$stateParams', "$location", function ($rootScope, $state, $stateParams, $location) {
+omApp.run(function ($rootScope, $state, $stateParams, $location, UserService) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
 
@@ -13,13 +13,13 @@ omApp.run(['$rootScope', '$state', '$stateParams', "$location", function ($rootS
     });
 
     $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
-        //if (fromState.data && fromState.data.authenticated) {
-        //    //event.preventDefault();
-        //    //$state.transitionTo('home');
-        //    $location.path('/about');
-        //}
+        if (toState.data && toState.data.authenticated && !UserService.IsAuthenticated()) {
+            event.preventDefault();
+            $state.go("home");
+
+        }
     });
-}]);
+});
 
 // Default breadcrumb
 omApp.config(function ($breadcrumbProvider) {
