@@ -1,4 +1,6 @@
-﻿Combine NavigateService, AsideService and state.config
+﻿Widget
+Cookie
+Combine NavigateService, AsideService and state.config
 Change to html5mode
 AMD || RequiredJS 
 	https://github.com/matys84pl/angularjs-requirejs-lazy-controllers
