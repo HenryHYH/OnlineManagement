@@ -1,4 +1,4 @@
-﻿var omApp = angular.module('om', ['ngCookies', 'ui.router', 'ui.bootstrap', 'ui-breadcrumb']);
+﻿var omApp = angular.module('om', ['ui.router', 'ui.bootstrap', 'ui-breadcrumb']);
 
 // Global variable
 omApp.run(function ($rootScope, $state, $stateParams, $location, UserService) {

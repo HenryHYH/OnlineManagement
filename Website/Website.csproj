@@ -79,7 +79,6 @@
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Master.aspx" />
-    <Content Include="Script\angular\angular-cookies.min.js" />
     <Content Include="Script\angular\angular-ui-router.js" />
     <Content Include="Script\angular\angular-ui-bootstrap-tpls.min.js" />
     <Content Include="Script\bootstrap\css\bootstrap-cosmo.min.css" />
@@ -141,7 +140,6 @@
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.woff" />
     <Content Include="Style\fontawesome\fonts\FontAwesome.otf" />
-    <Content Include="Script\angular\angular-cookies.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
