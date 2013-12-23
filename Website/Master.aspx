@@ -37,8 +37,8 @@
         </div>
     </div>
     <!-- jQuery -->
-    <script type="text/javascript" src="/Script/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/Script/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery/jquery-migrate-1.2.1.min.js"></script>
 
     <!-- bootstrap -->
     <script type="text/javascript" src="/Script/bootstrap/js/bootstrap.min.js"></script>

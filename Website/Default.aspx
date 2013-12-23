@@ -176,8 +176,8 @@
             <p class="text-center text-primary">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
-    <script type="text/javascript" src="/Script/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/Script/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/Script/jquery/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/Script/angular/angular.min.js"></script>
     <script type="text/javascript" src="/Script/bootstrap/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>

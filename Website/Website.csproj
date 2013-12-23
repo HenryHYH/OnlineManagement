@@ -97,8 +97,8 @@
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Script\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Script\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Script\jquery-1.10.2.min.js" />
-    <Content Include="Script\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Script\jquery\jquery-1.10.2.min.js" />
+    <Content Include="Script\jquery\jquery-migrate-1.2.1.min.js" />
     <Content Include="Script\bootstrap\respond.min.js" />
     <Content Include="TODO.txt" />
     <Content Include="Web.config" />
@@ -135,7 +135,7 @@
     <Content Include="Script\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Script\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Script\angular\angular.min.js.map" />
-    <Content Include="Script\jquery-1.10.2.min.map" />
+    <Content Include="Script\jquery\jquery-1.10.2.min.map" />
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.woff" />
