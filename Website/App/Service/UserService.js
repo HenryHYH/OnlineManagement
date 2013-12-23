@@ -1,4 +1,4 @@
-﻿omApp.factory("UserService", function () {
+﻿omApp.factory("UserService", function (ipCookie) {
     var current = { userName: "", loginTime: new Date() };
     var users = [
         { userName: "Henry", password: "henry", registerTime: new Date() },
@@ -6,10 +6,16 @@
     ];
 
     return {
-        user: function () { return current; },
-        IsAuthenticated: function () { return !!(current && current.userName) },
+        user: function () {
+            if (!current || !current.userName) {
+                current = ipCookie('user');
+            }
+            return current;
+        },
+        IsAuthenticated: function () { return !!(this.user() && this.user().userName) },
         Logout: function () {
             current = { userName: "", loginTime: new Date() };
+            ipCookie.remove("user");
             return true;
         },
         Login: function (info) {
@@ -23,6 +29,7 @@
                 var u = users.filter(FilterUser, { userName: userName.toLowerCase(), password: password });
                 if (u.length > 0) {
                     current = { userName: u[0].userName, loginTime: new Date() };
+                    ipCookie("user", current, { expires: 7 });
                     flag = true;
                 }
             }
@@ -38,6 +45,7 @@
             if (userName && password) {
                 if (!users.some(IsUserExists, { userName: userName, password: password })) {
                     current = { userName: userName, loginTime: new Date() };
+                    ipCookie("user", current, { expires: 7 });
                     users.push({ userName: userName, password: password, registerTime: new Date() });
                     flag = true;
                 }

@@ -79,6 +79,7 @@
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Master.aspx" />
+    <Content Include="Script\angular\angular-cookie.min.js" />
     <Content Include="Script\angular\angular-ui-router.js" />
     <Content Include="Script\angular\angular-ui-bootstrap-tpls.min.js" />
     <Content Include="Script\bootstrap\css\bootstrap-cosmo.min.css" />

@@ -1,5 +1,4 @@
 ﻿Widget
-Cookie
 Combine NavigateService, AsideService and state.config
 Change to html5mode
 AMD || RequiredJS 

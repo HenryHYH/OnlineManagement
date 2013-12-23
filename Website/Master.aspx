@@ -38,7 +38,6 @@
     </div>
     <!-- jQuery -->
     <script type="text/javascript" src="/Script/jquery/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/Script/jquery/jquery-migrate-1.2.1.min.js"></script>
 
     <!-- bootstrap -->
     <script type="text/javascript" src="/Script/bootstrap/js/bootstrap.min.js"></script>
@@ -52,6 +51,7 @@
     <script type="text/javascript" src="/Script/angular/angular-ui-router.js"></script>
     <script type="text/javascript" src="/Script/angular/angular-ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="/Script/angular/angular-breadcrumb.js"></script>
+    <script type="text/javascript" src="/Script/angular/angular-cookie.min.js"></script>
 
     <!-- Custom -->
     <script type="text/javascript" src="/App/App.js"></script>
