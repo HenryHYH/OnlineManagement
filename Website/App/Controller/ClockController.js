@@ -1,7 +1,6 @@
 ﻿var ClockController = function ($scope) {
     var UpdateTime = function () {
         $scope.date = new Date();
-        //alert("A");
     };
 
     UpdateTime();
