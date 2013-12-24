@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\Controller\AsideController.js" />
+    <Content Include="App\Controller\ClockController.js" />
     <Content Include="App\Controller\LoginController.js" />
     <Content Include="App\Controller\LogoutController.js" />
     <Content Include="App\Controller\NavigateController.js" />
@@ -75,6 +76,7 @@
     <Content Include="App\View\Navigate.html" />
     <Content Include="App\View\Product.html" />
     <Content Include="App\View\Register.html" />
+    <Content Include="App\Widget\Clock.html" />
     <Content Include="Default.aspx" />
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
