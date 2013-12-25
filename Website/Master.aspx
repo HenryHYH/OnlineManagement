@@ -31,7 +31,7 @@
     </div>
     <div class="container container-full container-full-height" ui-view>
     </div>
-    <div class="footer navbar-inverse">
+    <div class="footer navbar-inverse" style="display: none;">
         <div class="container">
             <p class="text-center">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
@@ -64,6 +64,7 @@
     <script type="text/javascript" src="/App/Controller/SearchController.js"></script>
     <script type="text/javascript" src="/App/Controller/RegisterController.js"></script>
     <script type="text/javascript" src="/App/Controller/ClockController.js"></script>
+    <script type="text/javascript" src="/App/Controller/CalendarController.js"></script>
     <!-- Service -->
     <script type="text/javascript" src="/App/Service/NavigateService.js"></script>
     <script type="text/javascript" src="/App/Service/AsideService.js"></script>
