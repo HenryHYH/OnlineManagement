@@ -2,11 +2,21 @@
     var weekends = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     $scope.time = new Date();
     $scope.weekends = weekends;
-    $scope.dates = DatesInCalendar();
+    $scope.dates = $scope.time.DatesInCalendar();
+
+    $scope.next = function () {
+        $scope.time = this.time.addMonths(1);
+        $scope.dates = $scope.time.DatesInCalendar();
+    }
+
+    $scope.prev = function () {
+        $scope.time = this.time.addMonths(-1);
+        $scope.dates = $scope.time.DatesInCalendar();
+    }
 }
 
-var DatesInCalendar = function (date) {
-    var result = [], dates = [], d = date || new Date();
+Date.prototype.DatesInCalendar = function () {
+    var result = [], dates = [], d = this;
 
     d.setDate(0);
     var lastMonthLastDate = d.getDate();

@@ -2,9 +2,9 @@
     <table class="table table-condensed text-center">
         <thead>
             <tr>
-                <th class="text-center"><i class="fa fa-arrow-left"></i></th>
+                <th class="text-center"><i class="fa fa-arrow-left" ng-click="prev()"></i></th>
                 <th colspan="5" class="text-center">{{time | date:"MMMM yyyy"}}</th>
-                <th class="text-center"><i class="fa fa-arrow-right"></i></th>
+                <th class="text-center"><i class="fa fa-arrow-right" ng-click="next()"></i></th>
             </tr>
             <tr>
                 <th ng-repeat="w in weekends">{{w}}</th>
