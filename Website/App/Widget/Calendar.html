@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th class="text-center" width="10%"><i class="fa fa-arrow-left" ng-click="prev()"></i></th>
-                <th class="text-center" width="80%" ng-click="changeMode()">{{time | date:format}}</th>
+                <th class="text-center" width="80%" ng-click="toggleMode()">{{time | date:format}}</th>
                 <th class="text-center"><i class="fa fa-arrow-right" ng-click="next()"></i></th>
             </tr>
         </thead>
@@ -25,26 +25,8 @@
     </table>
     <table class="table text-center" ng-switch-when="month">
         <tbody>
-            <!--<tr>
-                <td>January</td>
-                <td>February</td>
-                <td>March</td>
-                <td>April</td>
-            </tr>
-            <tr>
-                <td>May</td>
-                <td>June</td>
-                <td>July</td>
-                <td>August</td>
-            </tr>
-            <tr>
-                <td>September</td>
-                <td>October</td>
-                <td>November</td>
-                <td class="warning"><strong class="text-primary">December</strong></td>
-            </tr>-->
             <tr ng-repeat="row in months">
-                <td ng-repeat="cell in row" ng-class="{'warning':time.getMonth() == cell.value}" ng-switch="time.getMonth() == cell.value">
+                <td ng-repeat="cell in row" ng-class="{'warning':time.getMonth() == cell.value}" ng-switch="time.getMonth() == cell.value" ng-click="setMonth(cell.value)">
                     <span ng-switch-default class="text-muted">{{cell.text}}</span>
                     <strong class="text-primary" ng-switch-when="true">{{cell.text}}</strong>
                 </td>

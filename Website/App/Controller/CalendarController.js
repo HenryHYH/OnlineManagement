@@ -8,8 +8,8 @@
     ];
     $scope.months = months;
 
-    $scope.changeMode = function () {
-        if (this.mode === "date") {
+    $scope.setMode = function (newMode) {
+        if (newMode === "month") {
             this.mode = "month";
             this.format = "yyyy";
         }
@@ -18,7 +18,16 @@
             this.format = "MMMM yyyy";
         }
     }
-    $scope.changeMode();
+
+    $scope.toggleMode = function () {
+        if (this.mode === "date") {
+            $scope.setMode("month");
+        }
+        else {
+            $scope.setMode("date");
+        }
+    }
+    $scope.toggleMode();
 
     $scope.setTime = function (date) {
         $scope.time = date || new Date(2012, 1, 29);
@@ -44,6 +53,13 @@
             this.time.addYears(-1);
         }
         $scope.setTime(this.time);
+    }
+
+    $scope.setMonth = function (value) {
+        var n = this.time.getDate();
+        this.time.setMonth(value);
+        this.time.setDate(Math.min(n, this.time.getDaysInMonth()));
+        $scope.setMode("date");
     }
 }
 
