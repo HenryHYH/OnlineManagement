@@ -16,7 +16,7 @@
 }
 
 Date.prototype.DatesInCalendar = function () {
-    var result = [], dates = [], d = this;
+    var result = [], dates = [], d = new Date(this.getYear(), this.getMonth());
 
     d.setDate(0);
     var lastMonthLastDate = d.getDate();
