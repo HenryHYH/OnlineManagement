@@ -1,6 +1,7 @@
 ﻿var CalendarController = function ($scope) {
     var weekends = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     $scope.weekends = weekends;
+
     var months = [
         [{ text: "Jan", value: 0 }, { text: "Feb", value: 1 }, { text: "Mar", value: 2 }, { text: "Apr", value: 3 }],
         [{ text: "May", value: 4 }, { text: "Jun", value: 5 }, { text: "Jul", value: 6 }, { text: "Aug", value: 7 }],
@@ -8,6 +9,7 @@
     ];
     $scope.months = months;
 
+    // Set mode ["date", "month"]
     $scope.setMode = function (newMode) {
         if (newMode === "month") {
             this.mode = "month";
@@ -19,6 +21,7 @@
         }
     }
 
+    // Toggle mode ["date", "month"]
     $scope.toggleMode = function () {
         if (this.mode === "date") {
             $scope.setMode("month");
@@ -30,8 +33,9 @@
     $scope.toggleMode();
 
     $scope.setTime = function (date) {
-        $scope.time = date || new Date(2012, 1, 29);
-        $scope.dates = $scope.time.DatesInCalendar();
+        date = date || new Date();
+        $scope.time = date;
+        $scope.dates = date.DatesInCalendar();
     }
     $scope.setTime();
 
@@ -57,14 +61,16 @@
 
     $scope.setMonth = function (value) {
         var n = this.time.getDate();
+        this.time.setDate(1);
         this.time.setMonth(value);
         this.time.setDate(Math.min(n, this.time.getDaysInMonth()));
         $scope.setMode("date");
+        $scope.setTime(this.time);
     }
 }
 
 Date.prototype.DatesInCalendar = function () {
-    var result = [], dates = [], d = new Date(this.getYear(), this.getMonth());
+    var result = [], dates = [], d = new Date(this.getFullYear(), this.getMonth());
 
     d.setDate(0);
     var lastMonthLastDate = d.getDate();
@@ -126,4 +132,4 @@ Date.prototype.addYears = function (value) {
     this.setFullYear(this.getFullYear() + value);
     this.setDate(Math.min(n, this.getDaysInMonth()));
     return this;
-}
+};
