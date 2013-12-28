@@ -2,42 +2,40 @@
     <legend>
         <strong class="text-muted"><i class="fa fa-calendar-o"></i>&nbsp;Calendar</strong>
     </legend>
-    <div class="col-md-8 col-md-offset-2">
-        <div class="panel panel-primary calendar-widget" ng-controller="CalendarController" ng-switch="mode">
-            <table class="panel-heading table">
-                <tbody>
-                    <tr>
-                        <td class="text-right event" width="40%"><i class="fa fa-arrow-left" ng-click="prev()" tooltip="Previous" tooltip-placement="right"></i></td>
-                        <td class="text-center event" width="20%" ng-click="toggleMode()"><span tooltip="Change mode">{{time | date:format}}</span></td>
-                        <td class="text-left event"><i class="fa fa-arrow-right" ng-click="next()" tooltip="Next" tooltip-placement="left"></i></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table text-center" ng-switch-default>
-                <thead>
-                    <tr>
-                        <th class="text-center" ng-repeat="w in weekends">{{w}}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="row in dates">
-                        <td ng-repeat="cell in row" ng-class="{'active':cell.isInCurrentMonth, 'success':time.getDate() == cell.date && cell.isInCurrentMonth}" ng-switch="time.getDate() == cell.date && cell.isInCurrentMonth">
-                            <span ng-switch-default ng-class="{'text-muted':!cell.isInCurrentMonth}">{{cell.date}}</span>
-                            <strong class="text-success" ng-switch-when="true">{{cell.date}}</strong>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table text-center" ng-switch-when="month">
-                <tbody>
-                    <tr ng-repeat="row in months">
-                        <td class="event" ng-repeat="cell in row" ng-class="{'active':time.getMonth() == cell.value}" ng-switch="time.getMonth() == cell.value" ng-click="setMonth(cell.value)">
-                            <span ng-switch-default class="text-muted">{{cell.text}}</span>
-                            <strong class="text-success" ng-switch-when="true">{{cell.text}}</strong>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div class="panel panel-primary calendar-widget" ng-controller="CalendarController" ng-switch="mode">
+        <table class="panel-heading table">
+            <tbody>
+                <tr>
+                    <td class="text-right event" width="40%"><i class="fa fa-arrow-left" ng-click="prev()" tooltip="Previous" tooltip-placement="right"></i></td>
+                    <td class="text-center event" width="20%" ng-click="toggleMode()"><span tooltip="Change mode">{{time | date:format}}</span></td>
+                    <td class="text-left event"><i class="fa fa-arrow-right" ng-click="next()" tooltip="Next" tooltip-placement="left"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table text-center calendar" ng-switch-when="month">
+            <thead></thead>
+            <tbody>
+                <tr ng-repeat="row in months">
+                    <td class="event" ng-repeat="cell in row" ng-class="{'active':time.getMonth() == cell.value}" ng-switch="time.getMonth() == cell.value" ng-click="setMonth(cell.value)">
+                        <span ng-switch-default class="text-muted">{{cell.text}}</span>
+                        <strong class="text-success" ng-switch-when="true">{{cell.text}}</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table text-center calendar" ng-switch-default>
+            <thead>
+                <tr>
+                    <th class="text-center" ng-repeat="w in weekends">{{w}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in dates">
+                    <td ng-repeat="cell in row" ng-class="{'active':cell.isInCurrentMonth, 'text-muted':!cell.isInCurrentMonth, 'success text-success':time.getDate() == cell.date && cell.isInCurrentMonth}">
+                        <strong>{{cell.date}}</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </fieldset>

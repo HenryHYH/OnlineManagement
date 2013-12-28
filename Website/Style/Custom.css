@@ -5,5 +5,10 @@ body { padding-top: 70px; }
 .container-full-height { min-height: 100%; }
 .footer { margin-top: -70px; height: 70px; padding-top: 20px; }
 
+/* Calendar */
 .calendar-widget .event { cursor: pointer; }
+.calendar-widget .calendar { min-height: 600px; }
+.calendar-widget .calendar td { vertical-align: middle; }
+
+/* Calculator */
 .calculator-widget .monitor { margin-bottom: 0px; }

@@ -1,7 +1,7 @@
 ﻿Widget
 	I18N Widget
 	Print Widget
-	Calendar Widget (Date view click date)
+	Calendar Widget (Date view click date, hover change background-color)
 	Calculator Widget
 	Photo widget
 Toggle aside
