@@ -6,3 +6,4 @@ body { padding-top: 70px; }
 .footer { margin-top: -70px; height: 70px; padding-top: 20px; }
 
 .calendar-widget .event { cursor: pointer; }
+.calculator-widget .monitor { margin-bottom: 0px; }
