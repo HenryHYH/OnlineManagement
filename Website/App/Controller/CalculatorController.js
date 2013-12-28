@@ -1,0 +1,2 @@
+﻿var CalculatorController = function ($scope) {
+}

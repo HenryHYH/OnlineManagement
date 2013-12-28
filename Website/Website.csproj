@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\Controller\AsideController.js" />
+    <Content Include="App\Controller\CalculatorController.js" />
     <Content Include="App\Controller\CalendarController.js" />
     <Content Include="App\Controller\ClockController.js" />
     <Content Include="App\Controller\LoginController.js" />
@@ -77,8 +78,8 @@
     <Content Include="App\View\Navigate.html" />
     <Content Include="App\View\Product.html" />
     <Content Include="App\View\Register.html" />
-    <Content Include="App\Widget\Calculator.html" />
-    <Content Include="App\Widget\Calendar.html" />
+    <Content Include="App\View\Calculator.html" />
+    <Content Include="App\View\Calendar.html" />
     <Content Include="App\Widget\Clock.html" />
     <Content Include="App\Widget\Search.html" />
     <Content Include="Default.aspx" />

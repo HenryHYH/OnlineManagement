@@ -65,6 +65,7 @@
     <script type="text/javascript" src="/App/Controller/RegisterController.js"></script>
     <script type="text/javascript" src="/App/Controller/ClockController.js"></script>
     <script type="text/javascript" src="/App/Controller/CalendarController.js"></script>
+    <script type="text/javascript" src="/App/Controller/CalculatorController.js"></script>
     <!-- Service -->
     <script type="text/javascript" src="/App/Service/NavigateService.js"></script>
     <script type="text/javascript" src="/App/Service/AsideService.js"></script>

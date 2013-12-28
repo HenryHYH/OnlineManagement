@@ -1,5 +1,9 @@
 ﻿omApp.factory("AsideService", function () {
     var asides = {
+        "tool": [
+            { icon: "calendar", text: "Calendar", sref: "column-2.tool.calendar" },
+            { icon: "wrench", text: "Calculator", sref: "column-2.tool.calculator" }
+        ],
         "account": [
             { icon: "user", text: "Basic information", sref: "column-2.account" },
             { icon: "lock", text: "Change password", sref: "column-2.account.resetpassword" },
@@ -22,8 +26,7 @@
 
     return {
         Asides: function (param) {
-            if (!param) param = "";
-            return asides[param];
+            return asides[param || ""];
         }
     };
 });

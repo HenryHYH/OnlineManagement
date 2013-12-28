@@ -1,5 +1,4 @@
 ﻿<div class="list-group" ng-show="aside">
-    <!-- ng-class="{active:$state.is(item.sref)}" -->
     <a class="list-group-item" ng-repeat="item in aside" ui-sref="{{item.sref}}" ui-sref-active="active">
         <i class="fa fa-{{item.icon}}"></i>
         {{item.text}}
@@ -7,5 +6,5 @@
 </div>
 <div ng-include="'/App/Widget/Clock.html'"></div>
 <div ng-include="'/App/Widget/Search.html'"></div>
-<div ng-include="'/App/Widget/Calendar.html'"></div>
-<div ng-include="'/App/Widget/Calculator.html'"></div>
+<!--<div ng-include="'/App/Widget/Calendar.html'"></div>
+<div ng-include="'/App/Widget/Calculator.html'"></div>-->

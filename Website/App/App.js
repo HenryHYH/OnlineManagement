@@ -92,18 +92,39 @@ omApp.config(function ($stateProvider) {
     });
 });
 
-// Contact
+// Tool
 omApp.config(function ($stateProvider) {
-    $stateProvider.state("column-2.contact", {
-        url: "^/contact",
-        breadcrumb: "Contact",
+    $stateProvider.state("column-2.tool", {
+        url: "^/tool",
+        breadcrumb: "Tool",
         views: {
             "": {
-                template: "Contact"
+                template: "Tool"
             },
             "view-aside": {
                 templateUrl: "/App/View/Aside.html",
                 controller: "AsideController"
+            }
+        },
+        data: { parent: "tool" }
+    }).state("column-2.tool.calendar", {
+        url: "/calendar",
+        title: "Calendar",
+        breadcrumb: "Calendar",
+        views: {
+            "@column-2": {
+                templateUrl: "/App/View/Calendar.html",
+                controller: "CalendarController"
+            }
+        }
+    }).state("column-2.tool.calculator", {
+        url: "/calculator",
+        title: "Calculator",
+        breadcrumb: "Calculator",
+        views: {
+            "@column-2": {
+                templateUrl: "/App/View/Calculator.html",
+                controller: "CalculatorController"
             }
         }
     });

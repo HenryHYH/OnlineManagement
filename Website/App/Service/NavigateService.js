@@ -4,7 +4,12 @@
             {
                 datas: [
                     { icon: "envelope-o", text: "About", sref: "column-2.about" },
-                    { icon: "phone", text: "Contact", sref: "column-2.contact" },
+                    {
+                        icon: "wrench", text: "Tool", children: [
+                            { icon: "calendar", text: "Calendar", sref: "column-2.tool.calendar" },
+                            { icon: "keyboard-o", text: "Calculator", sref: "column-2.tool.calculator" }
+                        ]
+                    },
                     {
                         icon: "list", text: "Products", children: [
                             { icon: "android", text: "Product A", sref: "column-2.product.detail", data: { type: "A" } },
