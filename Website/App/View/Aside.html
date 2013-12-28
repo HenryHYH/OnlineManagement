@@ -1,7 +1,6 @@
 ﻿<div class="list-group" ng-show="aside">
     <a class="list-group-item" ng-repeat="item in aside" ui-sref="{{item.sref}}" ui-sref-active="active">
-        <i class="fa fa-{{item.icon}}"></i>
-        {{item.text}}
+        <i class="fa fa-{{item.icon}}"></i>&nbsp;{{item.text}}
     </a>
 </div>
 <div ng-include="'/App/Widget/Clock.html'"></div>

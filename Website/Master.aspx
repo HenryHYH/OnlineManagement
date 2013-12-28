@@ -33,7 +33,7 @@
     </div>
     <div class="footer">
         <div class="alert alert-info">
-            <p class="text-center">Create by Henry <i class="fa fa-smile-o"></i></p>
+            <p class="text-center">Create by <span class="alert-link">Henry</span> <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
     <!-- jQuery -->
