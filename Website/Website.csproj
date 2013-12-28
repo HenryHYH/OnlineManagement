@@ -77,6 +77,7 @@
     <Content Include="App\View\Navigate.html" />
     <Content Include="App\View\Product.html" />
     <Content Include="App\View\Register.html" />
+    <Content Include="App\Widget\Calculator.html" />
     <Content Include="App\Widget\Calendar.html" />
     <Content Include="App\Widget\Clock.html" />
     <Content Include="App\Widget\Search.html" />
