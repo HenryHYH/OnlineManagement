@@ -1,14 +1,17 @@
 ﻿html, body { height: 100%; }
-body { padding-top: 70px; }
+body { padding-top: 70px; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
 .btn:focus { outline: none; }
+
+/* Fit screen width */
 .container-full { margin: 0px auto; width: 100%; }
-.container-full-height { min-height: 100%; }
-.footer { margin-top: -70px; height: 70px; padding-top: 20px; }
+
+/* Sticky footer */
+.container-full-height { min-height: 100%; margin-bottom: -52px; padding-bottom: 52px; }
 
 /* Calendar */
 .calendar-widget .event { cursor: pointer; }
-.calendar-widget .calendar { min-height: 600px; }
-.calendar-widget .calendar td { vertical-align: middle; }
+.calendar-widget .calendar { min-height: 650px; }
+    .calendar-widget .calendar td { vertical-align: middle; }
 
 /* Calculator */
 .calculator-widget .monitor { margin-bottom: 0px; }

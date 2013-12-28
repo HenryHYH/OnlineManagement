@@ -171,9 +171,9 @@
             </div>
         </div>
     </div>
-    <div class="footer navbar-inverse">
-        <div class="container">
-            <p class="text-center text-primary">Create by Henry <i class="fa fa-smile-o"></i></p>
+    <div class="footer">
+        <div class="alert alert-info">
+            <p class="text-center">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
     <script type="text/javascript" src="/Script/jquery/jquery-1.10.2.min.js"></script>

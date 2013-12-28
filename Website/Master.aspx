@@ -31,8 +31,8 @@
     </div>
     <div class="container container-full container-full-height" ui-view>
     </div>
-    <div class="footer navbar-inverse" style="display: none;">
-        <div class="container">
+    <div class="footer">
+        <div class="alert alert-info">
             <p class="text-center">Create by Henry <i class="fa fa-smile-o"></i></p>
         </div>
     </div>
