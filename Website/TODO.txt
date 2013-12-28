@@ -1,7 +1,7 @@
 ﻿Widget
 	I18N Widget
 	Print Widget
-	Calendar Widget (Month view click month, cursor pointer)
+	Calendar Widget (Date view click date)
 	Calculator Widget
 	Photo widget
 Combine NavigateService, AsideService and state.config
