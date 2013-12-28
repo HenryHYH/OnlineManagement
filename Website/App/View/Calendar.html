@@ -1,4 +1,10 @@
-﻿<div class="panel panel-warning calendar-widget" ng-controller="CalendarController" ng-switch="mode">
+﻿<div class="panel panel-primary calendar-widget" ng-controller="CalendarController" ng-switch="mode">
+    <div class="panel-heading">
+        <strong class="panel-title">
+            <i class="fa fa-calendar"></i>
+            &nbsp;Calendar
+        </strong>
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -16,9 +22,9 @@
         </thead>
         <tbody>
             <tr ng-repeat="row in dates">
-                <td ng-repeat="cell in row" ng-class="{'warning':cell.isInCurrentMonth}" ng-switch="time.getDate() == cell.date && cell.isInCurrentMonth">
+                <td ng-repeat="cell in row" ng-class="{'active':cell.isInCurrentMonth, 'success':time.getDate() == cell.date && cell.isInCurrentMonth}" ng-switch="time.getDate() == cell.date && cell.isInCurrentMonth">
                     <span ng-switch-default ng-class="{'text-muted':!cell.isInCurrentMonth}">{{cell.date}}</span>
-                    <strong class="text-primary" ng-switch-when="true">{{cell.date}}</strong>
+                    <strong class="text-success" ng-switch-when="true">{{cell.date}}</strong>
                 </td>
             </tr>
         </tbody>
@@ -26,9 +32,9 @@
     <table class="table text-center" ng-switch-when="month">
         <tbody>
             <tr ng-repeat="row in months">
-                <td class="event" ng-repeat="cell in row" ng-class="{'warning':time.getMonth() == cell.value}" ng-switch="time.getMonth() == cell.value" ng-click="setMonth(cell.value)">
+                <td class="event" ng-repeat="cell in row" ng-class="{'active':time.getMonth() == cell.value}" ng-switch="time.getMonth() == cell.value" ng-click="setMonth(cell.value)">
                     <span ng-switch-default class="text-muted">{{cell.text}}</span>
-                    <strong class="text-primary" ng-switch-when="true">{{cell.text}}</strong>
+                    <strong class="text-success" ng-switch-when="true">{{cell.text}}</strong>
                 </td>
             </tr>
         </tbody>
