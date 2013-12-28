@@ -1,5 +1,5 @@
 ﻿<div class="panel panel-warning calendar-widget" ng-controller="CalendarController" ng-switch="mode">
-    <table class="table table-condensed">
+    <table class="table">
         <thead>
             <tr>
                 <th class="text-center event" width="10%"><i class="fa fa-arrow-left" ng-click="prev()"></i></th>
@@ -8,7 +8,7 @@
             </tr>
         </thead>
     </table>
-    <table class="table table-condensed text-center" ng-switch-default>
+    <table class="table text-center" ng-switch-default>
         <thead>
             <tr>
                 <th class="text-center" ng-repeat="w in weekends">{{w}}</th>

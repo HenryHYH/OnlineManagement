@@ -23,11 +23,11 @@
 
     // Toggle mode ["date", "month"]
     $scope.toggleMode = function () {
-        if (this.mode === "date") {
-            $scope.setMode("month");
+        if (this.mode === "month") {
+            $scope.setMode("date");
         }
         else {
-            $scope.setMode("date");
+            $scope.setMode("month");
         }
     }
     $scope.toggleMode();
