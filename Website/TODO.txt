@@ -4,6 +4,7 @@
 	Calendar Widget (Date view click date, hover change background-color)
 	Calculator Widget
 	Photo widget
+	Theme
 Combine NavigateService, AsideService and state.config
 Change to html5mode
 AMD || RequiredJS 
