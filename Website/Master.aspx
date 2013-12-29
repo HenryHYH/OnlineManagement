@@ -29,10 +29,10 @@
             </div>
         </div>
     </div>
-    <div class="container container-full container-full-height" ui-view>
+    <div class="container container-full container-full-height bg-linear-gradient" ui-view>
     </div>
     <div class="footer">
-        <div class="alert alert-info">
+        <div class="alert text-primary">
             <i class="fa fa-smile-o"></i>&nbsp;Create by <span class="alert-link">Henry</span> &copy;
             <div class="pull-right" ng-include="'/App/Widget/Clock.html'"></div>
         </div>

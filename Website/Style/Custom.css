@@ -1,6 +1,10 @@
 ﻿html, body { height: 100%; }
 body { padding-top: 70px; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
 .btn:focus { outline: none; }
+.bg-linear-gradient { background: -webkit-linear-gradient(top,#fff,#111); background: -moz-linear-gradient(top,#fff,#111); }
+
+/* Breadcrumb */
+.breadcrumb { background-color: transparent; }
 
 /* Fit screen width */
 .container-full { margin: 0px auto; width: 100%; }
@@ -10,7 +14,7 @@ body { padding-top: 70px; -moz-user-select: none; -webkit-user-select: none; -ms
 
 /* Calendar */
 .calendar-widget .event { cursor: pointer; }
-.calendar-widget .calendar { min-height: 650px; }
+.calendar-widget .calendar { height: 650px; }
     .calendar-widget .calendar td { vertical-align: middle; }
 
 /* Calculator */
