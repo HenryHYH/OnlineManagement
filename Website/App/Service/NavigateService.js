@@ -6,7 +6,7 @@
                     { icon: "envelope-o", text: "About", sref: "column-2.about" },
                     {
                         icon: "wrench", text: "Tool", children: [
-                            { icon: "calendar", text: "Calendar", sref: "column-2.tool.calendar" },
+                            { icon: "calendar-o", text: "Calendar", sref: "column-2.tool.calendar" },
                             { icon: "keyboard-o", text: "Calculator", sref: "column-2.tool.calculator" }
                         ]
                     },
