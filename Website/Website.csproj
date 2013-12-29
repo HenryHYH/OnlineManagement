@@ -67,6 +67,7 @@
     <Content Include="App\Controller\ProductController.js" />
     <Content Include="App\Controller\RegisterController.js" />
     <Content Include="App\Controller\SearchController.js" />
+    <Content Include="App\Directive\ToggleOffCanvasDirective.js" />
     <Content Include="App\Layout\Column-1.html" />
     <Content Include="App\Service\AsideService.js" />
     <Content Include="App\Service\NavigateService.js" />
