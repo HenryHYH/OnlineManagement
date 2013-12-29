@@ -71,6 +71,8 @@
     <script type="text/javascript" src="/App/Service/NavigateService.js"></script>
     <script type="text/javascript" src="/App/Service/AsideService.js"></script>
     <script type="text/javascript" src="/App/Service/UserService.js"></script>
+    <!-- Directive -->
+    <script type="text/javascript" src="/App/Directive/ToggleOffCanvasDirective.js"></script>
 
 </body>
 </html>
