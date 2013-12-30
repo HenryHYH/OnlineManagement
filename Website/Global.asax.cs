@@ -12,7 +12,9 @@ namespace Website
 
         protected void Application_Start(object sender, EventArgs e)
         {
+            //routes.Ignore("{*File}", new { File = @".*\.[a-z0-9A-Z]*(/.*)?" });
             System.Web.Routing.RouteTable.Routes.MapPageRoute("Index", "", "~/Master.aspx");
+            System.Web.Routing.RouteTable.Routes.MapPageRoute("All", "{*name}", "~/Master.aspx");
         }
 
         protected void Session_Start(object sender, EventArgs e)

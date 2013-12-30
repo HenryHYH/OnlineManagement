@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="om" ng-cloak>
 <head>
     <%-- For html5mode --%>
-    <%--<base href="/" />--%>
+    <base href="/" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{{$state.current.title || $state.current.breadcrumb || $state.current.name}}</title>
     <link href="/Script/bootstrap/css/bootstrap.min.css" rel="stylesheet" />

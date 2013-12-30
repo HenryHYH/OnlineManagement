@@ -31,7 +31,7 @@ omApp.config(function ($breadcrumbProvider) {
 // Default route
 omApp.config(function ($urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise("/");
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 });
 
 // Home
