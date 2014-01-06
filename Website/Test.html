@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="/Script/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        Array.prototype.OrderByAsc = function (func) {
+            var m = {};
+            for (var i = 0; i < this.length; i++) {
+                for (var k = 0; k < this.length; k++) {
+                    if (func(this[i]) < func(this[k])) {
+                        m = this[k];
+                        this[k] = this[i];
+                        this[i] = m;
+                    }
+                }
+            }
+            return this;
+        }
+        Array.prototype.OrderByDesc = function (func) {
+            var m = {};
+            for (var i = 0; i < this.length; i++) {
+                for (var k = 0; k < this.length; k++) {
+                    if (func(this[i]) > func(this[k])) {
+                        m = this[k];
+                        this[k] = this[i];
+                        this[i] = m;
+                    }
+                }
+            }
+            return this;
+        }
+    </script>
+    <script type="text/javascript">
+        var data = [{ name: "Henry", age: 27 }, { name: "Hello world", age: 28 }];
+
+        var filter = function () {
+            alert(data.filter(function (item) {
+                return item.age === 27;
+            }).length);
+
+            alert(data.reduce(function (previous, current) {
+                return previous.age + current.age;
+            }));
+
+            var list = data.OrderByDesc(function (item) {
+                return item.age;
+            });
+            for (var i in list) {
+                for (var j in list[i]) {
+                    alert(j + " = " + list[i][j]);
+                }
+            }
+        }
+
+        $(function () {
+            filter();
+        });
+    </script>
+</body>
+</html>
