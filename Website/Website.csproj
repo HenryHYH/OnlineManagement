@@ -110,6 +110,9 @@
     <Content Include="Script\jquery\jquery-migrate-1.2.1.min.js" />
     <Content Include="Script\bootstrap\respond.min.js" />
     <Content Include="Test.html" />
+    <Content Include="Test\Impress-default.html" />
+    <Content Include="Test\Impress-OK.html" />
+    <Content Include="Test\Impress1.html" />
     <Content Include="Test\Impress.html" />
     <Content Include="TODO.txt" />
     <Content Include="Web.config" />
