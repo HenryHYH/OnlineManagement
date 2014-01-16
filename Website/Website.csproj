@@ -110,10 +110,16 @@
     <Content Include="Script\jquery\jquery-migrate-1.2.1.min.js" />
     <Content Include="Script\bootstrap\respond.min.js" />
     <Content Include="Test.html" />
+    <Content Include="Test\fonts\fontawesome-webfont.svg" />
+    <Content Include="Test\lib\font-awesome.css" />
+    <Content Include="Test\img\position.jpg" />
     <Content Include="Test\Impress-default.html" />
+    <Content Include="Test\lib\impress-demo.css" />
     <Content Include="Test\Impress-OK.html" />
+    <Content Include="Test\lib\impress.js" />
     <Content Include="Test\Impress1.html" />
     <Content Include="Test\Impress.html" />
+    <Content Include="Test\Memo.txt" />
     <Content Include="TODO.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -154,6 +160,10 @@
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="Style\fontawesome\fonts\fontawesome-webfont.woff" />
     <Content Include="Style\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Test\fonts\fontawesome-webfont.eot" />
+    <Content Include="Test\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Test\fonts\fontawesome-webfont.woff" />
+    <Content Include="Test\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
