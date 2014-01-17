@@ -14,12 +14,14 @@
         .nobackground { background-color: transparent; }
         td { text-align: center; padding: 30px 10px 30px 10px; border: solid 1px #ccc; }
             td.noborder { border: none; }
-        b { display: inline-block; -webkit-transition: 0.5s; -moz-transition: 0.5s; -ms-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
-            b.title { margin-left: -30px; font-size: 40px; }
+        b { display: inline-block; -webkit-transition: 1s; -moz-transition: 1s; -ms-transition: 1s; -o-transition: 1s; transition: 1s; }
+            b.title { margin-left: -30px; font-size: 50px; color: #5CB85C; }
         .present b.rotating { -webkit-transform: rotate(-10deg); -moz-transform: rotate(-10deg); -ms-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg); -webkit-transition-delay: 0.25s; -moz-transition-delay: 0.25s; -ms-transition-delay: 0.25s; -o-transition-delay: 0.25s; transition-delay: 0.25s; }
         .present b.position { -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); -ms-transform: translateY(-10px); -o-transform: translateY(-10px); transform: translateY(-10px); }
+        .present b.scaling { -webkit-transform: scale(0.7); -moz-transform: scale(0.7); -ms-transform: scale(0.7); -o-transform: scale(0.7); transform: scale(0.7); -webkit-transition-delay: 0.5s; -moz-transition-delay: 0.5s; -ms-transition-delay: 0.5s; -o-transition-delay: 0.5s; transition-delay: 0.5s; }
         .slide q.title { margin-top: 200px; text-align: center; }
         .text-highlight { color: #428BCA; }
+        .text-danger { color: #D2322D; }
     </style>
 </head>
 <body class="impress-not-supported">
@@ -31,7 +33,7 @@
             <q style="text-align:right; font-size:30px; padding-right:80px;"><i class="fa fa-bug"></i>&nbsp;Henry&nbsp;&nbsp;2014</q>
         </div>
         <div class="step slide" data-x="-1000" data-y="-1000">
-            <b class="title rotating">Who we are?</b>
+            <b class="title">Who we are?</b>
             <i class="icon fa fa-bug fa-spin"></i>
             <q style="text-align:center;"><b class="position">Who we are?</b></q>
             <table style="width:100%;">
@@ -41,27 +43,53 @@
             </table>
         </div>
         <div class="step slide" data-x="0" data-y="-1000">
-            <b class="title rotating">Who we are?</b>
+            <b class="title">Who we are?</b>
             <i class="icon fa fa-bug fa-spin"></i>
             <q class="title">我们还有另外一个名字<br /><strong class="text-highlight">程序猿</strong></q>
         </div>
         <div class="step slide" data-x="1000" data-y="-1000">
-            <b class="title rotating">Who we are?</b>
+            <b class="title">Who we are?</b>
             <i class="icon fa fa-bug fa-spin"></i>
-            <q class="title"><strong>你印象中,<br /><span class="text-highlight">程序猿</span>是长什么样的？</strong></q>
+            <q class="title">你印象中,<br /><strong class="text-highlight">猿哥</strong>是长什么样的？</q>
         </div>
         <div class="step slide nobackground" data-x="1800" data-y="-1000" data-scale="0.1">
         </div>
-        <div class="step slide nobackground" data-x="1925" data-y="-1000" data-scale="0.1">
+        <div class="step slide nobackground" data-x="1925" data-y="-1000" data-scale="0.1" data-rotate="180">
         </div>
-        <div class="step slide nobackground" data-x="2050" data-y="-1000" data-scale="0.1">
+        <div class="step slide nobackground" data-x="2050" data-y="-1000" data-scale="0.1" data-rotate="360">
         </div>
-        <div class="step slide nobackground" data-x="2175" data-y="-1000" data-scale="0.1">
+        <div class="step slide nobackground" data-x="2175" data-y="-1000" data-scale="0.1" data-rotate="180">
         </div>
         <div class="step slide nobackground" data-x="2300" data-y="-1000" data-scale="0.1">
         </div>
         <div class="step slide" data-x="-2000" data-y="0">
-            <b class="title rotating">组织架构</b>
+            <b class="title">日常工作</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>沟通</q>
+            <ul style="margin-left:20px; margin-top:20px;">
+                <li>0、与业务沟通</li>
+                <li>1、与团队沟通</li>
+            </ul>
+        </div>
+        <div class="step slide" data-x="-1000" data-y="0">
+            <b class="title">日常工作</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>技术</q>
+            <ul style="margin-left:20px; margin-top:20px;">
+                <li>0、数据库技术</li>
+                <li>1、程序语言</li>
+                <li>2、程序设计</li>
+                <li>3、系统架构</li>
+                <li>4、设计及交互</li>
+            </ul>
+        </div>
+        <div class="step slide" data-x="0" data-y="0">
+            <b class="title">日常工作</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>同时，<br />还要处理各种紧急情况<br /><span class="text-highlight" style="float:right;">呵呵</span></q>
+        </div>
+        <div class="step slide" data-x="1000" data-y="0">
+            <b class="title">组织架构</b>
             <i class="icon fa fa-bug fa-spin"></i>
             <table style="width:100%; margin-top:160px;">
                 <tr>
@@ -74,32 +102,118 @@
                 </tr>
             </table>
         </div>
-        <div class="step slide" data-x="-1000" data-y="0">
-            7
-        </div>
-        <div class="step slide" data-x="0" data-y="0">
-            <b class="title rotating">主要职能</b>
+        <div class="step slide" data-x="2000" data-y="0">
+            <b class="title">主要职能</b>
             <i class="icon fa fa-bug fa-spin"></i>
-            <ul style="margin-top:130px;">
-                <li>1、适应时代变化，根据IT技术发展趋势，协同公司制定未来信息化建设战略方向，如：网络架构规划、软件架构规划、信息系统架构规划等等。</li>
-                <li>2、对传统工作及流程改造，实现在线化自动协同办公，尽可能的节约人力，提高生产力。</li>
-                <li>3、协助各部门对公司产品进行信息化、数字化改造，不断提高给客户优质的服务。</li>
-                <li>4、用IT技术协助公司产品宣传。</li>
+            <ul style="margin-top:170px;">
+                <li>0、为用户部门提供IT软件解决方案；</li>
+                <li>1、实施解决方案；</li>
+                <li>2、方案的后续服务和改进；</li>
             </ul>
         </div>
-        <div class="step slide" data-x="1000" data-y="0">
-            <b class="title rotating">主要职能</b>
-            <i class="icon fa fa-bug fa-spin"></i>
-            <q>总之，<br />就是配合公司及业务部门的要求，<br />提供解决方案和技术支持。</q>
-            <i style="float:right;" class="fa fa-smile-o fa-3x text-highlight"></i>
-        </div>
-        <div class="step slide" data-x="2000" data-y="0">
-            10
-        </div>
         <div class="step slide" data-x="-2000" data-y="1000">
-            11
+            <b class="title">使命</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q class="title">协助公司实现IT方向的战略目标&nbsp;<i class="fa fa-flag text-danger"></i></q>
         </div>
-        <div id="overview" class="step" data-x="0" data-y="0" data-scale="8">
+        <div class="step slide" data-x="-1000" data-y="1000">
+            <b class="title">总之</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q><br />就是为公司信息化建设，<br />提供解决方案和技术支持。</q>
+            <i style="float:right;" class="fa fa-thumbs-o-up fa-3x text-highlight"></i>
+        </div>
+        <div class="step slide" data-x="0" data-y="1000">
+            <b class="title">年度计划</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>
+                <br />Cnchemicals.com 改版
+            </q>
+        </div>
+        <div class="step slide" data-x="1000" data-y="1000">
+            <b class="title">年度计划</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>
+                前瞻性项目执行 & 开发<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- AMC<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- Company profile<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- Company data<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- IE analysis<br />
+            </q>
+        </div>
+        <div class="step slide" data-x="2000" data-y="1000">
+            <b class="title">年度计划</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>
+                在线出版调整 & 优化<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- Report、Byte 在线化工作<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- PD 需求迭代<br />
+            </q>
+        </div>
+        <div class="step slide" data-x="-2000" data-y="2000">
+            <b class="title">年度计划</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>
+                CRM<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- 市场营销模块<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- 客户管理策略与客服<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;- 流程与协作<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;...<br />
+            </q>
+        </div>
+        <div class="step slide" data-x="-1000" data-y="2000">
+            <b class="title">年度计划</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>
+                Content byte 撰写协作平台<br /><br />
+                PU 平台抽取、整理，实现软件化，拓展市场
+            </q>
+        </div>
+        <div class="step slide" data-x="0" data-y="2000">
+            <b class="title">年度计划</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>
+                知识库平台<br />
+                BI 总控平台<br />
+                流程设计 & 工作流<br />
+            </q>
+        </div>
+        <div class="step slide" data-x="1000" data-y="2000">
+            <b class="title">年度计划</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q>
+                公司系统帐号统一集成<br />
+                系统用户体验提升 & 界面重组<br />
+                系统架构松散耦合<br />
+            </q>
+        </div>
+        <div class="step slide" data-x="2000" data-y="2000">
+            <b class="title">Finally</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q style="margin-left:230px;">
+                我们是一群<br />&nbsp;&nbsp;<b class="position text-highlight">充满好奇心</b>，<br />
+                <b class="rotating text-highlight">思维严谨</b>，<br />
+                <b class="scaling text-highlight">有强迫症的</b><br />
+                <span style="text-decoration:line-through;">攻城狮</span><span class="text-danger">工程师</span>
+            </q>
+        </div>
+        <div class="step slide" data-x="-2000" data-y="3000">
+            <b class="title">Finally</b>
+            <i class="icon fa fa-bug fa-spin"></i>
+            <q style="text-align:center;">
+                去迎接新的挑战<br /><br />
+                <span style="border: solid 2px #D2322D; padding: 10px; border-radius: 10px;">
+                    <i class="fa fa-heart text-danger"></i>&nbsp;赞
+                </span>
+            </q>
+        </div>
+        <div class="step slide" data-x="-1000" data-y="3000">
+            <q style="margin-top: 200px;">
+                祝<br />
+                &nbsp;&nbsp;&nbsp;<strong>心想事成</strong>&nbsp;&nbsp;&nbsp;<strong>马上有&nbsp;<i class="fa fa-cny text-danger"></i></strong>
+            </q>
+            <q style="text-align:right; font-size:30px; padding-right:80px;"><i class="fa fa-bug"></i>&nbsp;Henry&nbsp;&nbsp;2014</q>
+        </div>
+        <div id="overview" class="step" data-x="0" data-y="1000" data-scale="8">
         </div>
     </div>
     <!--<script src="http://bartaz.github.com/impress.js/js/impress.js"></script>-->

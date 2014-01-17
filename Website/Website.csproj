@@ -112,7 +112,6 @@
     <Content Include="Test.html" />
     <Content Include="Test\fonts\fontawesome-webfont.svg" />
     <Content Include="Test\lib\font-awesome.css" />
-    <Content Include="Test\img\position.jpg" />
     <Content Include="Test\Impress-default.html" />
     <Content Include="Test\lib\impress-demo.css" />
     <Content Include="Test\Impress-OK.html" />
@@ -171,7 +170,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Test\img\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
